@@ -1,9 +1,22 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 import SectionDivider from "@/components/museum/SectionDivider";
+import JsonLd from "@/components/museum/JsonLd";
 
 type Props = { params: Promise<{ locale: string }> };
+
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "museums" });
+  return {
+    title: t("heading"),
+    description: t("subtitle"),
+    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale + "/museums" },
+  };
+}
 
 export default async function MuseumsPage({ params }: Props) {
   const { locale } = await params;
@@ -11,6 +24,51 @@ export default async function MuseumsPage({ params }: Props) {
 
   return (
     <>
+
+      <JsonLd data={[
+        {
+          "@context": "https://schema.org",
+          "@type": ["Museum", "TouristAttraction", "LocalBusiness"],
+          "name": "Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu",
+          "description": "Muzeu historik brenda kështjellës së Krujës, kushtuar heroit kombëtar Gjergj Kastrioti Skënderbeu.",
+          "url": "https://muzeukruje.vercel.app",
+          "telephone": "+35551122225",
+          "email": "muzeu.gjkskenderbeu@yahoo.com",
+          "image": "https://muzeukruje.vercel.app/images/castle-day.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sheshi Gjergj Kastrioti, Kështjella e Krujës",
+            "addressLocality": "Krujë",
+            "addressCountry": "AL"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 41.5097, "longitude": 19.7956 },
+          "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": ["Museum", "TouristAttraction", "LocalBusiness"],
+          "name": "Muzeu Etnografik Krujë",
+          "description": "Muzeu etnografik në kullën tradicionale shqiptare të shekullit XVIII, tregon jetën osmane të Krujës.",
+          "url": "https://muzeukruje.vercel.app",
+          "telephone": "+35551122225",
+          "email": "muzeu.gjkskenderbeu@yahoo.com",
+          "image": "https://muzeukruje.vercel.app/images/ethnographic-interior.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Pazari i Vjetër, Krujë",
+            "addressLocality": "Krujë",
+            "addressCountry": "AL"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 41.5073, "longitude": 19.7947 },
+          "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" }
+          ]
+        }
+      ]} />
       {/* ── Page header ─────────────────────────────────── */}
       <section className="stone-texture bg-museum-stone-950 py-20 px-4 text-center">
         <div className="relative z-10 max-w-2xl mx-auto">

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getTimelineEvents } from "@/repositories/timeline";
 import type { Locale } from "@/types";
@@ -5,6 +6,17 @@ import TimelineItem from "@/components/museum/TimelineItem";
 import SectionDivider from "@/components/museum/SectionDivider";
 
 type Props = { params: Promise<{ locale: string }> };
+
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "timeline" });
+  return {
+    title: t("heading"),
+    description: t("subtitle"),
+    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale + "/timeline" },
+  };
+}
 
 export default async function TimelinePage({ params }: Props) {
   const { locale } = await params;

@@ -12,6 +12,8 @@ type MuseumFilter = Museum | "all";
 type EraFilter = Exhibit["era"] | "all";
 type TypeFilter = Exhibit["type"] | "all";
 
+
+
 export default function CollectionsPage() {
   const params = useParams();
   const searchParams = useSearchParams();

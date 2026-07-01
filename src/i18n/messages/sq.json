@@ -77,7 +77,18 @@
     "ticket_free": "Falas",
     "location_title": "Vendndodhja",
     "directions_title": "Si të Arrini",
-    "accessibility_title": "Aksesibiliteti"
+    "accessibility_title": "Aksesibiliteti",
+    "accessibility_text": "Muzeu Historik ndodhet brenda kështjellës dhe ka rrugë me shkallë. Muzeu Etnografik ka hyrje të kufizuar për karrige me rrota. Për informacion specifik, ju lutemi na kontaktoni paraprakisht.",
+    "directions_tirana": "30 minutë nga Tirana me makinë nëpër rrugën Tiranë–Krujë",
+    "directions_bus": "Autobusë nga terminali i Tiranës (Sheshi Shqiponja) çdo orë — 60 Lekë",
+    "directions_taxi": "Taksi nga qyteti i poshtëm i Krujës deri te kështjella — rreth 5 minutë",
+    "contact_label": "Kontakti",
+    "google_title": "Na gjeni në Google",
+    "google_subtitle": "Lexoni vlerësimet e vizitorëve dhe lini mendimin tuaj",
+    "map_open": "Hap në Google Maps →",
+    "reviews_view": "Shiko vlerësimet",
+    "reviews_write": "Lini një vlerësim",
+    "reviews_disclaimer": "Vlerësimet vijnë nga Google Maps — platforma e pavarur e vizitorëve."
   },
   "contact": {
     "heading": "Na Kontaktoni",
@@ -95,5 +106,9 @@
     "provenance": "Provenienca",
     "dimensions": "Dimensionet",
     "museum_label": "Muzeu"
+  },
+  "about": {
+    "heading": "Rreth Muzeut",
+    "subtitle": "Historia dhe misioni i institucionit tonë"
   }
 }

@@ -13,12 +13,54 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
+const BASE = "https://muzeukruje.vercel.app";
+const LOCALES = ["sq", "en", "fr", "de", "ru", "pl"] as const;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "hero" });
+
+  const title = `${t("title")} — Krujë, Shqipëri`;
+  const description = `${t("tagline")} Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu dhe Muzeu Etnografik, Krujë, Shqipëri.`;
+  const url = `${BASE}/${locale}`;
+
   return {
-    title: `${t("title")} — Krujë`,
-    description: t("tagline"),
+    metadataBase: new URL(BASE),
+    title: { default: title, template: `%s | Muzeu Krujë` },
+    description,
+    keywords: [
+      "Muzeu Krujë", "Skanderbeg Museum", "Muzeu Etnografik Krujë",
+      "Gjergj Kastrioti Skënderbeu", "Krujë Albania", "museum Albania",
+      "Muzeu Historik Kombëtar", "kështjella Krujës",
+    ],
+    authors: [{ name: "Muzeu Historik dhe Etnografik, Krujë" }],
+    openGraph: {
+      type: "website",
+      locale,
+      url,
+      siteName: "Muzeu Historik dhe Etnografik, Krujë",
+      title,
+      description,
+      images: [{
+        url: "/images/ethnographic-interior.jpg",
+        width: 2560,
+        height: 1707,
+        alt: "Brendësia e Muzeut Etnografik Krujë — dhoma osmane e shekullit XVIII",
+      }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/images/ethnographic-interior.jpg"],
+    },
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, `${BASE}/${l}`])
+      ),
+    },
+    robots: { index: true, follow: true },
   };
 }
 

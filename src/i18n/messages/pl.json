@@ -66,7 +66,18 @@
     "ticket_free": "Bezpłatnie",
     "location_title": "Lokalizacja",
     "directions_title": "Jak dojechać",
-    "accessibility_title": "Dostępność"
+    "accessibility_title": "Dostępność",
+    "accessibility_text": "Muzeum Historyczne mieści się w zamku i posiada schody. Muzeum Etnograficzne ma ograniczony dostęp dla wózków inwalidzkich. W przypadku szczególnych potrzeb prosimy o wcześniejszy kontakt.",
+    "directions_tirana": "30 minut od Tirany samochodem drogą Tirana–Krujë",
+    "directions_bus": "Autobusy z terminalu w Tiranie (Sheshi Shqiponja) co godzinę — 60 Lekë",
+    "directions_taxi": "Taksówka z dolnego miasta Krujë do zamku — około 5 minut",
+    "contact_label": "Kontakt",
+    "google_title": "Znajdź nas w Google",
+    "google_subtitle": "Czytaj opinie odwiedzających i podziel się swoim doświadczeniem",
+    "map_open": "Otwórz w Google Maps →",
+    "reviews_view": "Czytaj opinie",
+    "reviews_write": "Napisz opinię",
+    "reviews_disclaimer": "Opinie pochodzą z Google Maps — niezależnej platformy dla odwiedzających."
   },
   "contact": {
     "heading": "Skontaktuj się z nami",
@@ -95,5 +106,9 @@
     "ethnographic_desc": "Mieści się w tradycyjnej albańskiej wieży kulla z XVIII wieku i przybliża codzienne życie osmańskiej Krujë. Stroje, naczynia, biżuteria i przedmioty domowe odkrywają albańską kulturę przez stulecia.",
     "ethnographic_period": "XVIII wiek · Tradycyjna Kulla",
     "explore": "Odkryj kolekcję"
+  },
+  "about": {
+    "heading": "O Muzeum",
+    "subtitle": "Historia i misja naszej instytucji"
   }
 }

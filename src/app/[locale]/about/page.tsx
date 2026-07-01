@@ -1,7 +1,19 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import SectionDivider from "@/components/museum/SectionDivider";
 
 type Props = { params: Promise<{ locale: string }> };
+
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
+  return {
+    title: t("heading") + " — Muzeu Historik dhe Etnografik Krujë",
+    description: t("subtitle"),
+    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale + "/about" },
+  };
+}
 
 export default async function AboutPage({ params }: Props) {
   const { locale } = await params;

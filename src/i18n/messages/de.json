@@ -66,7 +66,18 @@
     "ticket_free": "Kostenlos",
     "location_title": "Standort",
     "directions_title": "Anreise",
-    "accessibility_title": "Barrierefreiheit"
+    "accessibility_title": "Barrierefreiheit",
+    "accessibility_text": "Das Historische Museum befindet sich in der Burg und hat Treppen. Das Ethnografische Museum hat eingeschränkten Rollstuhlzugang. Bei besonderen Bedürfnissen wenden Sie sich bitte im Voraus an uns.",
+    "directions_tirana": "30 Minuten von Tirana mit dem Auto über die Straße Tirana–Krujë",
+    "directions_bus": "Busse vom Tirana-Terminal (Sheshi Shqiponja) stündlich — 60 Lekë",
+    "directions_taxi": "Taxi von der Unterstadt Krujë zur Burg — ca. 5 Minuten",
+    "contact_label": "Kontakt",
+    "google_title": "Finden Sie uns auf Google",
+    "google_subtitle": "Lesen Sie Besucherbewertungen und teilen Sie Ihre Erfahrung",
+    "map_open": "In Google Maps öffnen →",
+    "reviews_view": "Bewertungen ansehen",
+    "reviews_write": "Bewertung schreiben",
+    "reviews_disclaimer": "Bewertungen stammen von Google Maps — einer unabhängigen Besucherplattform."
   },
   "contact": {
     "heading": "Kontaktieren Sie uns",
@@ -95,5 +106,9 @@
     "ethnographic_desc": "Im traditionellen albanischen Kulla-Turm aus dem 18. Jahrhundert erweckt das Ethnographische Museum das Alltagsleben im osmanischen Krujë zum Leben. Trachten, Gefäße, Schmuck und Haushaltsgegenstände zeigen albanische Kultur über Jahrhunderte.",
     "ethnographic_period": "18. Jahrhundert · Traditionelle Kulla",
     "explore": "Sammlung erkunden"
+  },
+  "about": {
+    "heading": "Über das Museum",
+    "subtitle": "Geschichte und Mission unserer Institution"
   }
 }

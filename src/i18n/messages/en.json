@@ -73,7 +73,18 @@
     "ticket_free": "Free",
     "location_title": "Location",
     "directions_title": "Getting Here",
-    "accessibility_title": "Accessibility"
+    "accessibility_title": "Accessibility",
+    "accessibility_text": "The Historic Museum is located within the castle and features stairways. The Ethnographic Museum has limited wheelchair access. For specific accessibility needs, please contact us in advance.",
+    "directions_tirana": "30 minutes from Tirana by car via the Tirana–Krujë road",
+    "directions_bus": "Buses from Tirana terminal (Sheshi Shqiponja) every hour — 60 Lekë",
+    "directions_taxi": "Taxi from Krujë lower town to the castle — approximately 5 minutes",
+    "contact_label": "Contact",
+    "google_title": "Find Us on Google",
+    "google_subtitle": "Read visitor reviews and share your experience",
+    "map_open": "Open in Google Maps →",
+    "reviews_view": "Read reviews",
+    "reviews_write": "Write a review",
+    "reviews_disclaimer": "Reviews are sourced from Google Maps — an independent visitor platform."
   },
   "contact": {
     "heading": "Contact Us",
@@ -91,5 +102,13 @@
     "provenance": "Provenance",
     "dimensions": "Dimensions",
     "museum_label": "Museum"
+  },
+  "about": {
+    "heading": "About the Museum",
+    "subtitle": "The history and mission of our institution"
+  },
+  "timeline": {
+    "heading": "Timeline",
+    "subtitle": "From the Illyrians to independence — the history of Krujë through the centuries"
   }
 }

@@ -1,8 +1,10 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 import HeroSection from "@/components/museum/HeroSection";
 import SectionDivider from "@/components/museum/SectionDivider";
+import JsonLd from "@/components/museum/JsonLd";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -13,6 +15,17 @@ const quickLinks = [
   { key: "visit",       icon: "📍",  href: "/visit" },
 ];
 
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "hero" });
+  return {
+    title: t("title") + " — Krujë, Shqipëri",
+    description: t("tagline"),
+    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale },
+  };
+}
+
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   const t  = await getTranslations({ locale, namespace: "nav" });
@@ -20,6 +33,27 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
+
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Muzeu Historik dhe Etnografik, Krujë",
+            "url": "https://muzeukruje.vercel.app",
+            "logo": "https://muzeukruje.vercel.app/images/museum-logo.png",
+            "telephone": "+35551122225",
+            "email": "muzeu.gjkskenderbeu@yahoo.com",
+            "sameAs": ["https://www.instagram.com/muzeumetkruje/"]
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://muzeukruje.vercel.app",
+            "name": "Muzeu Historik dhe Etnografik, Krujë",
+            "inLanguage": ["sq","en","fr","de","ru","pl"]
+          }
+        ]
+      }} />
       <HeroSection locale={locale} />
       <SectionDivider />
 

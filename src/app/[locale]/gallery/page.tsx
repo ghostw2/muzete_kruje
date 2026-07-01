@@ -10,6 +10,8 @@ import SectionDivider from "@/components/museum/SectionDivider";
 
 type Category = GalleryImage["category"] | "all";
 
+
+
 export default function GalleryPage() {
   const params = useParams();
   const locale = params.locale as string;

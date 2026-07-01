@@ -66,7 +66,18 @@
     "ticket_free": "Gratuit",
     "location_title": "Localisation",
     "directions_title": "Comment venir",
-    "accessibility_title": "Accessibilité"
+    "accessibility_title": "Accessibilité",
+    "accessibility_text": "Le Musée Historique est situé dans le château et comporte des escaliers. Le Musée Ethnographique a un accès limité aux fauteuils roulants. Pour des besoins spécifiques, veuillez nous contacter à l'avance.",
+    "directions_tirana": "30 minutes de Tirana en voiture par la route Tirana–Krujë",
+    "directions_bus": "Bus depuis le terminal de Tirana (Sheshi Shqiponja) toutes les heures — 60 Lekë",
+    "directions_taxi": "Taxi depuis la basse ville de Krujë jusqu'au château — environ 5 minutes",
+    "contact_label": "Contact",
+    "google_title": "Retrouvez-nous sur Google",
+    "google_subtitle": "Lisez les avis des visiteurs et partagez votre expérience",
+    "map_open": "Ouvrir dans Google Maps →",
+    "reviews_view": "Voir les avis",
+    "reviews_write": "Laisser un avis",
+    "reviews_disclaimer": "Les avis proviennent de Google Maps — une plateforme indépendante de visiteurs."
   },
   "contact": {
     "heading": "Nous Contacter",
@@ -95,5 +106,9 @@
     "ethnographic_desc": "Abrité dans une kulla albanaise traditionnelle du XVIIIe siècle, le musée ethnographique restitue la vie quotidienne de Krujë à l'époque ottomane. Costumes, ustensiles, bijoux et objets domestiques révèlent la culture albanaise à travers les siècles.",
     "ethnographic_period": "XVIIIe siècle · Kulla Traditionnelle",
     "explore": "Explorer la Collection"
+  },
+  "about": {
+    "heading": "À propos du Musée",
+    "subtitle": "L'histoire et la mission de notre institution"
   }
 }
