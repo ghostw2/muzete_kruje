@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Home",
+    "museums": "Museums",
+    "timeline": "Timeline",
+    "collections": "Collections",
+    "gallery": "Gallery",
+    "news": "News & Events",
+    "visit": "Visit",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Historical and Ethnographic Museum",
+    "subtitle": "Krujë · Albania",
+    "tagline": "Two museums — one thousand years of history. Skanderbeg's castle and the ethnographic kulla.",
+    "cta_explore": "Explore the Museums",
+    "cta_visit": "Plan Your Visit",
+    "scroll": "Discover more"
+  },
+  "museums": {
+    "heading": "Two Museums — One Heritage",
+    "subtitle": "Two unique institutions within the historic walls of Krujë",
+    "skanderbeg_name": "Gjergj Kastrioti Skanderbeg Museum",
+    "skanderbeg_desc": "Within the historic castle of Krujë, the museum honours Albania's national hero — Gjergj Kastrioti Skanderbeg. Original weapons, documents and artifacts from the 1443–1468 period tell the story of 25 years of heroic resistance against the Ottoman Empire.",
+    "skanderbeg_period": "15th Century · Castle of Krujë",
+    "ethnographic_name": "Ethnographic Museum",
+    "ethnographic_desc": "Housed in a traditional 18th-century Albanian kulla (tower house), the ethnographic museum brings everyday life in Ottoman-era Krujë to life. Costumes, vessels, jewellery and household objects reveal Albanian culture and customs across the centuries.",
+    "ethnographic_period": "18th Century · Traditional Kulla",
+    "explore": "Explore the Collection"
+  },
+  "collections": {
+    "heading": "Collections",
+    "subtitle": "Artifacts and cultural heritage",
+    "filter_museum": "Museum",
+    "filter_all": "All",
+    "filter_skanderbeg": "Skanderbeg Museum",
+    "filter_ethnographic": "Ethnographic Museum",
+    "filter_era": "Era",
+    "filter_type": "Type",
+    "era_ancient": "Ancient",
+    "era_medieval": "Medieval",
+    "era_ottoman": "Ottoman",
+    "era_modern": "Modern",
+    "type_weaponry": "Weaponry",
+    "type_textiles": "Textiles",
+    "type_documents": "Documents",
+    "type_household": "Household",
+    "view_details": "View details"
+  },
+  "gallery": {
+    "heading": "Gallery",
+    "subtitle": "Images from the museums and their artifacts",
+    "tab_architecture": "Architecture",
+    "tab_artifacts": "Artifacts",
+    "tab_events": "Events"
+  },
+  "news": {
+    "heading": "News & Events",
+    "subtitle": "Latest exhibitions and activities",
+    "read_more": "Read more"
+  },
+  "visit": {
+    "heading": "Plan Your Visit",
+    "hours_title": "Opening Hours",
+    "hours_weekdays": "Monday – Friday",
+    "hours_saturday": "Saturday",
+    "hours_sunday": "Sunday",
+    "hours_closed": "Closed",
+    "tickets_title": "Ticket Prices",
+    "ticket_adult": "Adults",
+    "ticket_child": "Children (under 12)",
+    "ticket_student": "Students",
+    "ticket_free": "Free",
+    "location_title": "Location",
+    "directions_title": "Getting Here",
+    "accessibility_title": "Accessibility"
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "about_title": "About the Institution",
+    "team_title": "Our Team",
+    "form_title": "Send a Message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "common": {
+    "back": "Back",
+    "period": "Period",
+    "provenance": "Provenance",
+    "dimensions": "Dimensions",
+    "museum_label": "Museum"
+  }
+}

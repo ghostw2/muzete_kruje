@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Kreu",
+    "museums": "Muzeumet",
+    "timeline": "Kronologjia",
+    "collections": "Koleksionet",
+    "gallery": "Galeria",
+    "news": "Lajme & Ngjarje",
+    "visit": "Vizita",
+    "contact": "Kontakti"
+  },
+  "hero": {
+    "title": "Muzeu Historik dhe Etnografik",
+    "subtitle": "Krujë · Shqipëri",
+    "tagline": "Dy muze — një histori mijëravjeçare. Kështjella e Skënderbeut dhe kulla etnografike.",
+    "cta_explore": "Eksploroni Muzeumet",
+    "cta_visit": "Planifikoni Vizitën",
+    "scroll": "Zbuloni më shumë"
+  },
+  "museums": {
+    "heading": "Dy Muze — Një Trashëgimi",
+    "subtitle": "Dy institucione unike brenda mureve historike të Krujës",
+    "skanderbeg_name": "Muzeu Gjergj Kastrioti Skënderbeu",
+    "skanderbeg_desc": "Brenda kështjellës historike të Krujës, muzeu nderëzon heroin kombëtar shqiptar — Gjergj Kastriotin Skënderbeun. Armët, dokumentet dhe artefaktet origjinale të periudhës 1443–1468 tregojnë 25 vjet rezistencë heroike kundër Perandorisë Osmane.",
+    "skanderbeg_period": "Shekulli XV · Kështjella e Krujës",
+    "ethnographic_name": "Muzeu Etnografik",
+    "ethnographic_desc": "Vendosur në një kullë tradicionale shqiptare të shekullit XVIII, muzeu etnografik sjell jetën e përditshme të Krujës osmane. Veshjet, enët, stolitë dhe objektet shtëpiake tregojnë kulturën dhe zakonet shqiptare nëpër shekuj.",
+    "ethnographic_period": "Shekulli XVIII · Kulla Tradicionale",
+    "explore": "Eksploroni Koleksionin"
+  },
+  "collections": {
+    "heading": "Koleksionet",
+    "subtitle": "Artefakte dhe trashëgimi kulturore",
+    "filter_museum": "Muzeu",
+    "filter_all": "Të gjitha",
+    "filter_skanderbeg": "Muzeu Skënderbeu",
+    "filter_ethnographic": "Muzeu Etnografik",
+    "filter_era": "Epoka",
+    "filter_type": "Lloji",
+    "era_ancient": "Antike",
+    "era_medieval": "Mesjetare",
+    "era_ottoman": "Osmane",
+    "era_modern": "Moderne",
+    "type_weaponry": "Armët",
+    "type_textiles": "Tekstilet",
+    "type_documents": "Dokumentet",
+    "type_household": "Shtëpiake",
+    "view_details": "Shiko detajet"
+  },
+  "gallery": {
+    "heading": "Galeria",
+    "subtitle": "Imazhe nga muzeumet dhe artefaktet",
+    "tab_architecture": "Arkitektura",
+    "tab_artifacts": "Artefaktet",
+    "tab_events": "Ngjarjet"
+  },
+  "timeline": {
+    "heading": "Kronologjia",
+    "subtitle": "Nga ilirët te pavarësia — historia e Krujës nëpër shekuj"
+  },
+  "news": {
+    "heading": "Lajme & Ngjarje",
+    "subtitle": "Ekspozitat dhe aktivitetet e fundit",
+    "read_more": "Lexo më shumë"
+  },
+  "visit": {
+    "heading": "Planifikoni Vizitën",
+    "hours_title": "Orari i Punës",
+    "hours_weekdays": "E Hënë – E Premte",
+    "hours_saturday": "E Shtunë",
+    "hours_sunday": "E Diel",
+    "hours_closed": "Mbyllur",
+    "tickets_title": "Çmimet e Biletave",
+    "ticket_adult": "Të rritur",
+    "ticket_child": "Fëmijë (nën 12 vjeç)",
+    "ticket_student": "Studentë",
+    "ticket_free": "Falas",
+    "location_title": "Vendndodhja",
+    "directions_title": "Si të Arrini",
+    "accessibility_title": "Aksesibiliteti"
+  },
+  "contact": {
+    "heading": "Na Kontaktoni",
+    "about_title": "Rreth Institucionit",
+    "team_title": "Ekipi Ynë",
+    "form_title": "Dërgoni Mesazh",
+    "name": "Emri",
+    "email": "Email",
+    "message": "Mesazhi",
+    "send": "Dërgo Mesazhin"
+  },
+  "common": {
+    "back": "Kthehu",
+    "period": "Periudha",
+    "provenance": "Provenienca",
+    "dimensions": "Dimensionet",
+    "museum_label": "Muzeu"
+  }
+}

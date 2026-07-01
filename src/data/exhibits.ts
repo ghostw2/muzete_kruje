@@ -1,0 +1,225 @@
+import type { Exhibit } from "@/types";
+
+// Images: local /images/* paths (Next.js optimised) + Wikimedia Commons URLs (unoptimized in ArtifactCard).
+const IMG = {
+  weapons:     "/images/gallery/ska-weapons.jpg",
+  lances:      "/images/gallery/ska-lances.jpg",
+  mural:       "/images/gallery/ska-mural.jpg",
+  eagleFlag:   "/images/gallery/eth-eagle-curtains.jpg",
+  mosaic:      "/images/gallery/ska-mosaic.jpg",
+  ethInterior: "/images/ethnographic-interior.jpg",
+  tapestry:    "/images/gallery/eth-tapestry.jpg",
+  ethRoom:     "/images/gallery/eth-interior-room.jpg",
+  portrait:    "https://upload.wikimedia.org/wikipedia/commons/b/b5/Portrait_of_Skanderbeg_%281550%29.jpg",
+  battle:      "https://upload.wikimedia.org/wikipedia/commons/b/b2/George_Castriot_Skanderbeg_battle.jpg",
+  firman:      "https://upload.wikimedia.org/wikipedia/commons/3/39/Firman_issued_by_Sultan_Selim_III_%281801%29.jpg",
+  costume:     "https://upload.wikimedia.org/wikipedia/commons/3/34/Traditional_North_Albanian_Dress.jpg",
+  dress:       "https://upload.wikimedia.org/wikipedia/commons/4/40/Albanian_women%27s_dress.JPG",
+};
+
+export const exhibitsData: Exhibit[] = [
+
+  // ── ETHNOGRAPHIC MUSEUM — Albanian (sq) ──────────────────────────────
+  {
+    id: "eth-1-sq", locale: "sq", slug: "kostum-traditional", museum: "ethnographic",
+    name: "Kostum Traditional Femëror", period: "Shekulli XVIII", era: "ottoman", type: "textiles",
+    description: "Kostum i plotë femëror nga rajoni i Krujës. Përmban xhubletë të qëndisur me fije ari, brez argjendi dhe kapele tradicionale. Pasqyron mjeshtërinë e lartë të endjes dhe qëndisjes shqiptare të periudhës osmane.",
+    imageUrl: IMG.costume,
+    provenance: "Familja Kelmendi, Krujë", dimensions: "Komplet veshje",
+  },
+  {
+    id: "eth-2-sq", locale: "sq", slug: "firman-osman", museum: "ethnographic",
+    name: "Firman Osman", period: "1750", era: "ottoman", type: "documents",
+    description: "Dokument zyrtar osman (firman) që rregullonte tregtinë në bazarin e Krujës. Shkruar me kaligrafi osmane mbi letër pergameni, me vulën e sulltanit Mahmud I.",
+    imageUrl: IMG.firman,
+    provenance: "Arkivi i Qytetit të Krujës", dimensions: "48 × 72 cm",
+  },
+  {
+    id: "eth-3-sq", locale: "sq", slug: "vatre-zjarri", museum: "ethnographic",
+    name: "Vatër Zjarri Tradicionale", period: "Shekulli XIX", era: "modern", type: "household",
+    description: "Vatër zjarri e gdhendur me motive tradicionale shqiptare. Qendra e shtëpisë shqiptare — vendi ku mblidhej familja, gatuhej ushqimi dhe zhvillohej jeta shoqërore.",
+    imageUrl: IMG.ethInterior,
+    provenance: "Shtëpia Etnografike, Krujë", dimensions: "120 × 80 × 40 cm",
+  },
+  {
+    id: "eth-4-sq", locale: "sq", slug: "qilim-ilir", museum: "ethnographic",
+    name: "Fragment Qilimi Ilir i Restauruar", period: "Shekulli IV p.K.", era: "ancient", type: "textiles",
+    description: "Fragment qilimi i restauruar me motive gjeometrike ilire. Motivet e trekëndëshave dhe vijave zigzag janë karakteristike të artit dekorativ ilir të bregdetit adriatik.",
+    imageUrl: IMG.tapestry,
+    provenance: "Gërmime arkeologjike, nekropol ilir", dimensions: "Fragment: 45 × 38 cm",
+  },
+  {
+    id: "eth-5-sq", locale: "sq", slug: "stoli-argjendi", museum: "ethnographic",
+    name: "Stoli Argjendi Femërore", period: "Shekulli XVIII–XIX", era: "ottoman", type: "textiles",
+    description: "Koleksion stolish argjendi të punuara me teknikën filigran — byzylykë, vathë dhe gjerdane. Argjendaria shqiptare ka traditë shekullore dhe pasqyron ndikimin oriental dhe venedikas.",
+    imageUrl: IMG.dress,
+    provenance: "Bazari i Krujës, koleksion privat", dimensions: "Koleksion 12 cope",
+  },
+  {
+    id: "eth-6-sq", locale: "sq", slug: "ibrik-bakri", museum: "ethnographic",
+    name: "Ibrik Bakri Osman", period: "Shekulli XVIII", era: "ottoman", type: "household",
+    description: "Ibrik bakri me gdhendja dekorative floralore, i përdorur për shërbimin e kafesë turke. Objekt tipik i shtëpisë shqiptare të periudhës osmane, me rëndësi të madhe sociale dhe ceremoniale.",
+    imageUrl: IMG.ethRoom,
+    provenance: "Kulla Ethnografike, Krujë", dimensions: "Lartësi: 28 cm",
+  },
+
+  // ── SKANDERBEG MUSEUM — Albanian (sq) ────────────────────────────────
+  {
+    id: "ska-1-sq", locale: "sq", slug: "shpata-e-skenderbeut", museum: "skanderbeg",
+    name: "Shpata e Skënderbeut", period: "Shekulli XV", era: "medieval", type: "weaponry",
+    description: "Shpata ceremoniale e atribuuar Gjergj Kastriotit — Skënderbeut. Teh çeliku të kalitur me dorezë argjendi me gdhendja të hollë. Një nga artefaktet më të çmuara të rezistencës shqiptare kundër Perandorisë Osmane.",
+    imageUrl: IMG.weapons,
+    provenance: "Kështjella e Krujës", dimensions: "Gjatësi: 92 cm",
+  },
+  {
+    id: "ska-2-sq", locale: "sq", slug: "helma-e-skenderbeut", museum: "skanderbeg",
+    name: "Helma e Skënderbeut (Replikë)", period: "Shekulli XV", era: "medieval", type: "weaponry",
+    description: "Replikë e saktë e helmës origjinale të Skënderbeut, e cila ruhet në Muzeun Kunsthistorisches në Vjenë. Helma konikale me krye dhie — stemën e familjes Kastrioti — është simboli më i njohur i Shqipërisë mesjetare.",
+    imageUrl: IMG.mural,
+    provenance: "Replikë — Origjinali: Kunsthistorisches Museum, Vjenë", dimensions: "Lartësi: 32 cm, Diametri: 22 cm",
+  },
+  {
+    id: "ska-3-sq", locale: "sq", slug: "buzdugan-skenderbeu", museum: "skanderbeg",
+    name: "Buzdugan Lufte (Topuz)", period: "Shekulli XV", era: "medieval", type: "weaponry",
+    description: "Topuz metalik luftarak i periudhës mesjetare, i ngjashëm me ato të përdorura nga kalorësia shqiptare nën komandën e Skënderbeut. Koka sferike me shtiza rrotull ishte armë shkatërruese kundër armaturave.",
+    imageUrl: IMG.lances,
+    provenance: "Gërmime arkeologjike, Krujë 1972", dimensions: "Gjatësi totale: 58 cm, Koka: 12 cm",
+  },
+  {
+    id: "ska-4-sq", locale: "sq", slug: "flamuri-shqiptar-1444", museum: "skanderbeg",
+    name: "Flamuri Shqiptar — Shqiponja Dykrenare", period: "Shekulli XV", era: "medieval", type: "documents",
+    description: "Reprodukim i flamurit historik të Gjergj Kastriotit — shqiponja e zezë dykrenare mbi sfond të kuq. Ky simbol, trashëguar nga familja Kastrioti, u bë flamuri kombëtar shqiptar dhe vazhdon të jetë flamuri i Shqipërisë deri më sot.",
+    imageUrl: IMG.eagleFlag,
+    provenance: "Reprodukim historik i dokumentuar", dimensions: "180 × 120 cm",
+  },
+  {
+    id: "ska-5-sq", locale: "sq", slug: "letra-alfonso-napoli", museum: "skanderbeg",
+    name: "Letër Diplomatike — Alfonso V i Napolit", period: "1451", era: "medieval", type: "documents",
+    description: "Kopje e letrës diplomatike të Skënderbeut dërguar mbretit Alfonso V të Aragonës dhe Napolit, duke kërkuar aleancë dhe mbështetje ushtarake kundër Perandorisë Osmane. Tregon aftësinë e Skënderbeut si diplomat europian.",
+    imageUrl: IMG.firman,
+    provenance: "Arkivi i Napolit — Kopje e dokumentuar", dimensions: "32 × 48 cm",
+  },
+  {
+    id: "ska-6-sq", locale: "sq", slug: "monedha-principata-arber", museum: "skanderbeg",
+    name: "Monedha të Principatës Arbër", period: "Shekulli XIII–XV", era: "medieval", type: "documents",
+    description: "Koleksion monedhash argjendi dhe bakri të principatave shqiptare para dhe gjatë periudhës së Skënderbeut. Monedhat tregojnë simbolet e familjeve fisnike shqiptare dhe kontaktet tregtare me Venedikun dhe Raguzën.",
+    imageUrl: IMG.mosaic,
+    provenance: "Koleksion arkeologjik, Shqipëri e Mesme", dimensions: "Koleksion 38 monedha",
+  },
+  {
+    id: "ska-7-sq", locale: "sq", slug: "harta-beteja-torvioll", museum: "skanderbeg",
+    name: "Harta e Betejës së Torviollit 1444", period: "1444", era: "medieval", type: "documents",
+    description: "Hartë e rindërtuar e betejës së Torviollit (29 qershor 1444) — fitorja e parë e madhe e Skënderbeut. Forcat shqiptare prej 15 000 vetash thyen ushtrinë osmane prej 25 000 vetash, duke treguar gjeniun ushtarak të komandantit.",
+    imageUrl: IMG.battle,
+    provenance: "Rindërtim historik i dokumentuar", dimensions: "90 × 65 cm",
+  },
+  {
+    id: "ska-8-sq", locale: "sq", slug: "portret-skenderbeu-shekulli-xv", museum: "skanderbeg",
+    name: "Portret i Skënderbeut — Shekulli XVI", period: "Shekulli XVI", era: "medieval", type: "documents",
+    description: "Kopje e portretit të hershëm të Gjergj Kastriotit nga shekulli XVI, i bazuar në përshkrimet bashkëkohore. Tregon Skënderbeun me helma karakteristike, armaturë dhe shprehje vendosëse. Origjinali ndodhet në koleksione europiane.",
+    imageUrl: IMG.portrait,
+    provenance: "Kopje e dokumentuar — Origjinali: koleksion privat europian", dimensions: "60 × 80 cm",
+  },
+
+  // ── ETHNOGRAPHIC MUSEUM — English (en) ───────────────────────────────
+  {
+    id: "eth-1-en", locale: "en", slug: "traditional-costume", museum: "ethnographic",
+    name: "Traditional Female Costume", period: "18th Century", era: "ottoman", type: "textiles",
+    description: "Complete female costume from the Krujë region. Includes an embroidered xhubleta with gold thread, silver belt and traditional headwear. Reflects the high craftsmanship of Albanian weaving and embroidery during the Ottoman period.",
+    imageUrl: IMG.costume,
+    provenance: "Kelmendi family, Krujë", dimensions: "Complete ensemble",
+  },
+  {
+    id: "eth-2-en", locale: "en", slug: "ottoman-firman", museum: "ethnographic",
+    name: "Ottoman Firman", period: "1750", era: "ottoman", type: "documents",
+    description: "Official Ottoman document (firman) regulating trade in the Krujë bazaar. Written in Ottoman calligraphy on parchment paper, bearing the seal of Sultan Mahmud I.",
+    imageUrl: IMG.firman,
+    provenance: "Krujë City Archive", dimensions: "48 × 72 cm",
+  },
+  {
+    id: "eth-3-en", locale: "en", slug: "traditional-hearth", museum: "ethnographic",
+    name: "Traditional Hearth", period: "19th Century", era: "modern", type: "household",
+    description: "Stone hearth carved with traditional Albanian motifs. The centre of the Albanian home — where the family gathered, food was cooked, and social life unfolded.",
+    imageUrl: IMG.ethInterior,
+    provenance: "Ethnographic House, Krujë", dimensions: "120 × 80 × 40 cm",
+  },
+  {
+    id: "eth-4-en", locale: "en", slug: "illyrian-rug", museum: "ethnographic",
+    name: "Restored Illyrian Rug Fragment", period: "4th Century BC", era: "ancient", type: "textiles",
+    description: "Restored rug fragment with Illyrian geometric motifs. The triangular and zigzag patterns are characteristic of the decorative art of Adriatic Illyrian tribes.",
+    imageUrl: IMG.tapestry,
+    provenance: "Archaeological excavations, Illyrian necropolis", dimensions: "Fragment: 45 × 38 cm",
+  },
+  {
+    id: "eth-5-en", locale: "en", slug: "silver-jewellery", museum: "ethnographic",
+    name: "Traditional Silver Jewellery", period: "18th–19th Century", era: "ottoman", type: "textiles",
+    description: "Collection of filigree silver jewellery — bracelets, earrings and necklaces. Albanian silversmithing has a centuries-old tradition reflecting both Oriental and Venetian influences.",
+    imageUrl: IMG.dress,
+    provenance: "Krujë bazaar, private collection", dimensions: "Collection of 12 pieces",
+  },
+  {
+    id: "eth-6-en", locale: "en", slug: "ottoman-copper-ewer", museum: "ethnographic",
+    name: "Ottoman Copper Coffee Ewer", period: "18th Century", era: "ottoman", type: "household",
+    description: "Copper ewer with floral decorative engravings, used for serving Turkish coffee. A typical object of the Albanian Ottoman-period household, with great social and ceremonial significance.",
+    imageUrl: IMG.ethRoom,
+    provenance: "Ethnographic kulla, Krujë", dimensions: "Height: 28 cm",
+  },
+
+  // ── SKANDERBEG MUSEUM — English (en) ─────────────────────────────────
+  {
+    id: "ska-1-en", locale: "en", slug: "skanderbeg-sword", museum: "skanderbeg",
+    name: "Skanderbeg's Sword", period: "15th Century", era: "medieval", type: "weaponry",
+    description: "Ceremonial sword attributed to Gjergj Kastrioti — Skanderbeg. Tempered steel blade with a finely engraved silver hilt. One of the most treasured artifacts of the Albanian resistance against the Ottoman Empire.",
+    imageUrl: IMG.weapons,
+    provenance: "Castle of Krujë", dimensions: "Length: 92 cm",
+  },
+  {
+    id: "ska-2-en", locale: "en", slug: "skanderbeg-helmet", museum: "skanderbeg",
+    name: "Skanderbeg's Helmet (Replica)", period: "15th Century", era: "medieval", type: "weaponry",
+    description: "Exact replica of Skanderbeg's original helmet, preserved in the Kunsthistorisches Museum in Vienna. The conical helmet crowned with a goat's head — the Kastrioti family crest — is the most recognisable symbol of medieval Albania.",
+    imageUrl: IMG.mural,
+    provenance: "Replica — Original: Kunsthistorisches Museum, Vienna", dimensions: "Height: 32 cm, Diameter: 22 cm",
+  },
+  {
+    id: "ska-3-en", locale: "en", slug: "war-mace", museum: "skanderbeg",
+    name: "War Mace (Buzdugan)", period: "15th Century", era: "medieval", type: "weaponry",
+    description: "Medieval iron war mace of the type used by Albanian cavalry under Skanderbeg's command. The spherical spiked head was a devastating weapon against armoured opponents.",
+    imageUrl: IMG.lances,
+    provenance: "Archaeological excavations, Krujë 1972", dimensions: "Total length: 58 cm, Head: 12 cm",
+  },
+  {
+    id: "ska-4-en", locale: "en", slug: "albanian-flag-1444", museum: "skanderbeg",
+    name: "Albanian Flag — Double-Headed Eagle", period: "15th Century", era: "medieval", type: "documents",
+    description: "Reproduction of Gjergj Kastrioti's historic standard — the black double-headed eagle on a red field. Inherited from the Kastrioti dynasty, this symbol became the Albanian national flag and remains so to this day.",
+    imageUrl: IMG.eagleFlag,
+    provenance: "Documented historical reproduction", dimensions: "180 × 120 cm",
+  },
+  {
+    id: "ska-5-en", locale: "en", slug: "letter-to-alfonso-naples", museum: "skanderbeg",
+    name: "Diplomatic Letter — Alfonso V of Naples", period: "1451", era: "medieval", type: "documents",
+    description: "Copy of Skanderbeg's diplomatic letter to King Alfonso V of Aragon and Naples, seeking alliance and military support against the Ottoman Empire. It demonstrates Skanderbeg's stature as a European diplomat.",
+    imageUrl: IMG.firman,
+    provenance: "Naples Archive — Documented copy", dimensions: "32 × 48 cm",
+  },
+  {
+    id: "ska-6-en", locale: "en", slug: "albanian-principality-coins", museum: "skanderbeg",
+    name: "Albanian Principality Coins", period: "13th–15th Century", era: "medieval", type: "documents",
+    description: "Collection of silver and copper coins from Albanian principalities before and during Skanderbeg's era. The coins show the emblems of Albanian noble families and reveal trade contacts with Venice and Ragusa.",
+    imageUrl: IMG.mosaic,
+    provenance: "Archaeological collection, central Albania", dimensions: "Collection of 38 coins",
+  },
+  {
+    id: "ska-7-en", locale: "en", slug: "battle-map-torvioll-1444", museum: "skanderbeg",
+    name: "Battle Map of Torvioll 1444", period: "1444", era: "medieval", type: "documents",
+    description: "Reconstructed map of the Battle of Torvioll (29 June 1444) — Skanderbeg's first great victory. Albanian forces of 15,000 routed an Ottoman army of 25,000, demonstrating his exceptional military genius.",
+    imageUrl: IMG.battle,
+    provenance: "Documented historical reconstruction", dimensions: "90 × 65 cm",
+  },
+  {
+    id: "ska-8-en", locale: "en", slug: "portrait-of-skanderbeg", museum: "skanderbeg",
+    name: "Portrait of Skanderbeg — 16th Century", period: "16th Century", era: "medieval", type: "documents",
+    description: "Copy of an early 16th-century portrait of Gjergj Kastrioti, based on contemporary descriptions. Shows Skanderbeg in his characteristic helmet, armour and resolute expression. The original is held in European collections.",
+    imageUrl: IMG.portrait,
+    provenance: "Documented copy — Original: European private collection", dimensions: "60 × 80 cm",
+  },
+];

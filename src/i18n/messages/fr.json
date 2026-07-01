@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "timeline": "Chronologie",
+    "collections": "Collections",
+    "gallery": "Galerie",
+    "news": "Actualités & Événements",
+    "visit": "Visite",
+    "contact": "Contact",
+    "museums": "Musées"
+  },
+  "hero": {
+    "title": "Musée Historique et Ethnographique",
+    "subtitle": "Krujë · Albanie",
+    "tagline": "La pierre de l'histoire albanaise — la citadelle de Skanderbeg",
+    "cta_explore": "Explorer le Musée",
+    "cta_visit": "Planifier votre Visite",
+    "scroll": "Découvrir plus"
+  },
+  "timeline": {
+    "heading": "Chronologie Historique",
+    "subtitle": "De l'Antiquité illyrienne à nos jours"
+  },
+  "collections": {
+    "heading": "Collections",
+    "subtitle": "Artefacts et patrimoine culturel",
+    "filter_era": "Époque",
+    "filter_type": "Type",
+    "era_ancient": "Antique",
+    "era_medieval": "Médiévale",
+    "era_ottoman": "Ottomane",
+    "era_modern": "Moderne",
+    "type_weaponry": "Armement",
+    "type_textiles": "Textiles",
+    "type_documents": "Documents",
+    "type_household": "Domestique",
+    "view_details": "Voir les détails",
+    "filter_museum": "Musée",
+    "filter_all": "Tout",
+    "filter_skanderbeg": "Musée Skanderbeg",
+    "filter_ethnographic": "Musée Ethnographique"
+  },
+  "gallery": {
+    "heading": "Galerie",
+    "subtitle": "Images du musée et de ses artefacts",
+    "tab_architecture": "Architecture",
+    "tab_artifacts": "Artefacts",
+    "tab_events": "Événements"
+  },
+  "news": {
+    "heading": "Actualités & Événements",
+    "subtitle": "Dernières expositions et activités",
+    "read_more": "Lire la suite"
+  },
+  "visit": {
+    "heading": "Planifier votre Visite",
+    "hours_title": "Horaires d'ouverture",
+    "hours_weekdays": "Lundi – Vendredi",
+    "hours_saturday": "Samedi",
+    "hours_sunday": "Dimanche",
+    "hours_closed": "Fermé",
+    "tickets_title": "Tarifs",
+    "ticket_adult": "Adultes",
+    "ticket_child": "Enfants (moins de 12 ans)",
+    "ticket_student": "Étudiants",
+    "ticket_free": "Gratuit",
+    "location_title": "Localisation",
+    "directions_title": "Comment venir",
+    "accessibility_title": "Accessibilité"
+  },
+  "contact": {
+    "heading": "Nous Contacter",
+    "about_title": "À propos de l'Institution",
+    "team_title": "Notre Équipe",
+    "form_title": "Envoyer un Message",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer le Message"
+  },
+  "common": {
+    "back": "Retour",
+    "period": "Période",
+    "provenance": "Provenance",
+    "dimensions": "Dimensions",
+    "museum_label": "Musée"
+  },
+  "museums": {
+    "heading": "Deux Musées — Un Patrimoine",
+    "subtitle": "Deux institutions uniques dans les murs historiques de Krujë",
+    "skanderbeg_name": "Musée Gjergj Kastrioti Skanderbeg",
+    "skanderbeg_desc": "Au cœur du château historique de Krujë, le musée honore le héros national albanais — Skanderbeg. Ses armes, documents et artefacts originaux de 1443–1468 racontent 25 ans de résistance héroïque contre l'Empire ottoman.",
+    "skanderbeg_period": "XVe siècle · Château de Krujë",
+    "ethnographic_name": "Musée Ethnographique",
+    "ethnographic_desc": "Abrité dans une kulla albanaise traditionnelle du XVIIIe siècle, le musée ethnographique restitue la vie quotidienne de Krujë à l'époque ottomane. Costumes, ustensiles, bijoux et objets domestiques révèlent la culture albanaise à travers les siècles.",
+    "ethnographic_period": "XVIIIe siècle · Kulla Traditionnelle",
+    "explore": "Explorer la Collection"
+  }
+}
