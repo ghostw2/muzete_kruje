@@ -5,9 +5,12 @@
     "collections": "Collections",
     "gallery": "Galerie",
     "news": "Actualités & Événements",
+    "pavilions": "Pavillons",
+    "guides": "Guides",
     "visit": "Visite",
     "contact": "Contact",
-    "museums": "Musées"
+    "museums": "Musées",
+    "njoftimet": "Annonces"
   },
   "hero": {
     "title": "Musée Historique et Ethnographique",
@@ -78,7 +81,12 @@
     "map_open": "Ouvrir dans Google Maps →",
     "reviews_view": "Voir les avis",
     "reviews_write": "Laisser un avis",
-    "reviews_disclaimer": "Les avis proviennent de Google Maps — une plateforme indépendante de visiteurs."
+    "reviews_disclaimer": "Les avis proviennent de Google Maps — une plateforme indépendante de visiteurs.",
+    "tickets_online_title": "Acheter des Billets en Ligne",
+    "tickets_online_desc": "Service officiel de l'État albanais — achetez votre billet avant votre visite.",
+    "tickets_online_btn": "Acheter un Billet — e-Albania →",
+    "tickets_online_note": "Nécessite un compte e-Albania (carte d'identité nationale)",
+    "hours_everyday": "Lundi – Dimanche"
   },
   "contact": {
     "heading": "Nous Contacter",
@@ -88,7 +96,10 @@
     "name": "Nom",
     "email": "Email",
     "message": "Message",
-    "send": "Envoyer le Message"
+    "send": "Envoyer le Message",
+    "contact_direct_title": "Contact direct",
+    "phone_label": "Téléphone",
+    "links_title": "Liens"
   },
   "common": {
     "back": "Retour",
@@ -100,16 +111,57 @@
   "museums": {
     "heading": "Deux Musées — Un Patrimoine",
     "subtitle": "Deux institutions uniques dans les murs historiques de Krujë",
-    "skanderbeg_name": "Musée Gjergj Kastrioti Skanderbeg",
+    "skanderbeg_name": "Musée National Gjergj Kastrioti Skanderbeg",
     "skanderbeg_desc": "Au cœur du château historique de Krujë, le musée honore le héros national albanais — Skanderbeg. Ses armes, documents et artefacts originaux de 1443–1468 racontent 25 ans de résistance héroïque contre l'Empire ottoman.",
     "skanderbeg_period": "XVe siècle · Château de Krujë",
-    "ethnographic_name": "Musée Ethnographique",
+    "ethnographic_name": "Musée National Ethnographique de Krujë",
     "ethnographic_desc": "Abrité dans une kulla albanaise traditionnelle du XVIIIe siècle, le musée ethnographique restitue la vie quotidienne de Krujë à l'époque ottomane. Costumes, ustensiles, bijoux et objets domestiques révèlent la culture albanaise à travers les siècles.",
     "ethnographic_period": "XVIIIe siècle · Kulla Traditionnelle",
-    "explore": "Explorer la Collection"
+    "explore": "Explorer la Collection",
+    "explore_rooms": "Explorer Salle par Salle",
+    "audio_guide": "Audioguide"
+  },
+  "pavilions": {
+    "heading": "Guide Audio",
+    "subtitle": "Descriptions narratées de chaque pavillon du musée",
+    "play": "Lire l'audio",
+    "pause": "Mettre en pause",
+    "show_transcript": "Lire la transcription",
+    "hide_transcript": "Masquer la transcription",
+    "transcript_lang_note": "Transcription en anglais",
+    "transcript_lang_note_al": "Transcription en albanais",
+    "audio_label": "Écouter cette section",
+    "kruja": "Krujë — Introduction",
+    "muzeu": "Musée Historique Skanderbeg",
+    "lashtesia": "Antiquité",
+    "mesjeta": "Moyen Âge",
+    "bashkimi": "Unification",
+    "invazioni": "Invasion ottomane",
+    "rezistenca": "Résistance",
+    "pinakoteka": "Pinacothèque",
+    "etnografiku": "Musée Ethnographique"
   },
   "about": {
     "heading": "À propos du Musée",
     "subtitle": "L'histoire et la mission de notre institution"
+  },
+  "etnografiku": {
+    "heading": "Musée Ethnographique",
+    "subtitle": "Un parcours pièce par pièce dans une kulla albanaise du XVIIIe siècle"
+  },
+  "guides": {
+    "heading": "Guides",
+    "subtitle": "Audioguide et visite pièce par pièce",
+    "audio_section": "Audioguide — Musée Historique Skanderbeg",
+    "tour_section": "Musée Ethnographique",
+    "tour_subtitle": "Un parcours pièce par pièce dans une kulla albanaise du XVIIIe siècle"
+  },
+  "njoftimet": {
+    "heading": "Annonces",
+    "subtitle": "Avis officiels du musée",
+    "read_more": "Lire la suite",
+    "back": "Retour aux annonces",
+    "no_items": "Aucune annonce pour le moment.",
+    "view_all": "Voir toutes les annonces"
   }
 }

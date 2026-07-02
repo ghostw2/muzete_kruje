@@ -13,7 +13,7 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-const BASE = "https://muzeukruje.vercel.app";
+const BASE = "https://qendramuzeore-kruje.com";
 const LOCALES = ["sq", "en", "fr", "de", "ru", "pl"] as const;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "hero" });
 
   const title = `${t("title")} — Krujë, Shqipëri`;
-  const description = `${t("tagline")} Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu dhe Muzeu Etnografik, Krujë, Shqipëri.`;
+  const description = `${t("tagline")} Muzeu Kombëtar Gjergj Kastrioti Skënderbeu dhe Muzeu Kombëtar Etnografik Krujë, Shqipëri.`;
   const url = `${BASE}/${locale}`;
 
   return {
@@ -31,14 +31,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: [
       "Muzeu Krujë", "Skanderbeg Museum", "Muzeu Etnografik Krujë",
       "Gjergj Kastrioti Skënderbeu", "Krujë Albania", "museum Albania",
-      "Muzeu Historik Kombëtar", "kështjella Krujës",
+      "Qendra Muzeore Krujë", "kështjella Krujës",
     ],
-    authors: [{ name: "Muzeu Historik dhe Etnografik, Krujë" }],
+    authors: [{ name: "Qendra Muzeore Krujë" }],
     openGraph: {
       type: "website",
       locale,
       url,
-      siteName: "Muzeu Historik dhe Etnografik, Krujë",
+      siteName: "Qendra Muzeore Krujë",
       title,
       description,
       images: [{

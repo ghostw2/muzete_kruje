@@ -6,8 +6,11 @@
     "collections": "Koleksionet",
     "gallery": "Galeria",
     "news": "Lajme & Ngjarje",
+    "pavilions": "Pavillionet",
+    "guides": "Guidat",
     "visit": "Vizita",
-    "contact": "Kontakti"
+    "contact": "Kontakti",
+    "njoftimet": "Njoftimet"
   },
   "hero": {
     "title": "Muzeu Historik dhe Etnografik",
@@ -20,13 +23,15 @@
   "museums": {
     "heading": "Dy Muze — Një Trashëgimi",
     "subtitle": "Dy institucione unike brenda mureve historike të Krujës",
-    "skanderbeg_name": "Muzeu Gjergj Kastrioti Skënderbeu",
+    "skanderbeg_name": "Muzeu Kombëtar Gjergj Kastrioti Skënderbeu",
     "skanderbeg_desc": "Brenda kështjellës historike të Krujës, muzeu nderëzon heroin kombëtar shqiptar — Gjergj Kastriotin Skënderbeun. Armët, dokumentet dhe artefaktet origjinale të periudhës 1443–1468 tregojnë 25 vjet rezistencë heroike kundër Perandorisë Osmane.",
     "skanderbeg_period": "Shekulli XV · Kështjella e Krujës",
-    "ethnographic_name": "Muzeu Etnografik",
+    "ethnographic_name": "Muzeu Kombëtar Etnografik Krujë",
     "ethnographic_desc": "Vendosur në një kullë tradicionale shqiptare të shekullit XVIII, muzeu etnografik sjell jetën e përditshme të Krujës osmane. Veshjet, enët, stolitë dhe objektet shtëpiake tregojnë kulturën dhe zakonet shqiptare nëpër shekuj.",
     "ethnographic_period": "Shekulli XVIII · Kulla Tradicionale",
-    "explore": "Eksploroni Koleksionin"
+    "explore": "Eksploroni Koleksionin",
+    "explore_rooms": "Eksploroni Dhomë pas Dhome",
+    "audio_guide": "Audioguide"
   },
   "collections": {
     "heading": "Koleksionet",
@@ -89,7 +94,12 @@
     "map_open": "Hap në Google Maps →",
     "reviews_view": "Shiko vlerësimet",
     "reviews_write": "Lini një vlerësim",
-    "reviews_disclaimer": "Vlerësimet vijnë nga Google Maps — platforma e pavarur e vizitorëve."
+    "reviews_disclaimer": "Vlerësimet vijnë nga Google Maps — platforma e pavarur e vizitorëve.",
+    "tickets_online_title": "Blej Biletën Online",
+    "tickets_online_desc": "Shërbim zyrtar i shtetit shqiptar — blej biletën para vizitës.",
+    "tickets_online_btn": "Bli Biletën — e-Albania →",
+    "tickets_online_note": "Kërkon llogari e-Albania (ID kombëtare)",
+    "hours_everyday": "E Hënë – E Diel"
   },
   "contact": {
     "heading": "Na Kontaktoni",
@@ -99,7 +109,10 @@
     "name": "Emri",
     "email": "Email",
     "message": "Mesazhi",
-    "send": "Dërgo Mesazhin"
+    "send": "Dërgo Mesazhin",
+    "contact_direct_title": "Kontakti Direkt",
+    "phone_label": "Telefon",
+    "links_title": "Lidhjet"
   },
   "common": {
     "back": "Kthehu",
@@ -108,8 +121,47 @@
     "dimensions": "Dimensionet",
     "museum_label": "Muzeu"
   },
+  "pavilions": {
+    "heading": "Udhëzues Audio",
+    "subtitle": "Përshkrime të narruara të çdo pavillioni të muzeut",
+    "play": "Luaj audio",
+    "pause": "Ndal audio",
+    "show_transcript": "Lexo transkriptin",
+    "hide_transcript": "Fshih transkriptin",
+    "transcript_lang_note": "Transkript në anglisht",
+    "transcript_lang_note_al": "Transkript në shqip",
+    "audio_label": "Dëgjo këtë seksion",
+    "kruja": "Krujë — Hyrje",
+    "muzeu": "Muzeu Historik Skënderbeu",
+    "lashtesia": "Lashtësia",
+    "mesjeta": "Mesjeta",
+    "bashkimi": "Bashkimi",
+    "invazioni": "Invazioni",
+    "rezistenca": "Rezistenca",
+    "pinakoteka": "Pinakoteka",
+    "etnografiku": "Muzeu Etnografik"
+  },
   "about": {
     "heading": "Rreth Muzeut",
     "subtitle": "Historia dhe misioni i institucionit tonë"
+  },
+  "etnografiku": {
+    "heading": "Muzeu Etnografik",
+    "subtitle": "Një udhëtim dhomë pas dhome nëpër një kullë shqiptare të shekullit XVIII"
+  },
+  "guides": {
+    "heading": "Guidat",
+    "subtitle": "Audioguide dhe vizitë dhomë pas dhome",
+    "audio_section": "Audioguide — Muzeu Historik Skënderbeu",
+    "tour_section": "Muzeu Etnografik",
+    "tour_subtitle": "Një udhëtim dhomë pas dhome nëpër një kullë shqiptare të shekullit XVIII"
+  },
+  "njoftimet": {
+    "heading": "Njoftimet",
+    "subtitle": "Njoftime zyrtare nga muzeu",
+    "read_more": "Lexo më shumë",
+    "back": "Kthehu tek njoftimet",
+    "no_items": "Nuk ka njoftime për momentin.",
+    "view_all": "Shiko të gjitha njoftimet"
   }
 }

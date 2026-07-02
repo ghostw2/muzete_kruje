@@ -8,9 +8,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "visit" });
   return {
-    title: t("heading") + " — Muzeu Historik dhe Etnografik Krujë",
-    description: "Orari i hapjes, çmimet e biletave dhe udhëzimet për të arritur në Muzeun Historik Kombëtar Gjergj Kastrioti Skënderbeu dhe Muzeun Etnografik të Krujës.",
-    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale + "/visit" },
+    title: t("heading") + " — Qendra Muzeore Krujë",
+    description: "Orari i hapjes, çmimet e biletave dhe udhëzimet për të arritur në Muzeun Kombëtar Gjergj Kastrioti Skënderbeu dhe Muzeun Kombëtar Etnografik Krujë.",
+    alternates: { canonical: "https://qendramuzeore-kruje.com/" + locale + "/visit" },
   };
 }
 
@@ -70,18 +70,27 @@ export default async function VisitPage({ params }: Props) {
               <h2 className="font-heading text-museum-walnut text-2xl mb-3 pb-2 border-b border-museum-gold/30">
                 {t("hours_title")}
               </h2>
-              <Row label={t("hours_weekdays")} value="09:00 – 17:00" />
-              <Row label={t("hours_saturday")} value="10:00 – 16:00" />
-              <Row label={t("hours_sunday")} value={t("hours_closed")} muted />
+              <Row label={t("hours_everyday")} value="09:00 – 19:00" />
             </div>
 
-            <div>
-              <h2 className="font-heading text-museum-walnut text-2xl mb-3 pb-2 border-b border-museum-gold/30">
-                {t("tickets_title")}
-              </h2>
-              <Row label={t("ticket_adult")} value="200 Lekë" />
-              <Row label={t("ticket_student")} value="100 Lekë" />
-              <Row label={t("ticket_child")} value={t("ticket_free")} />
+            <div className="border border-museum-gold/20 p-5 bg-museum-linen-100/60">
+              <h3 className="font-heading text-museum-walnut text-sm tracking-widest uppercase mb-2">
+                {t("tickets_online_title")}
+              </h3>
+              <p className="font-body text-museum-walnut/60 text-xs leading-relaxed mb-3">
+                {t("tickets_online_desc")}
+              </p>
+              <a
+                href="https://e-albania.al/ServiceDetails/16946"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center px-4 py-2.5 bg-museum-gold text-museum-stone-950 font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-gold/90 transition-colors"
+              >
+                {t("tickets_online_btn")}
+              </a>
+              <p className="font-body text-museum-walnut/40 text-xs mt-2 text-center">
+                {t("tickets_online_note")}
+              </p>
             </div>
 
             <div>
@@ -146,7 +155,7 @@ export default async function VisitPage({ params }: Props) {
               <div className="flex items-center gap-2">
                 <span className="text-museum-gold text-lg">⚔</span>
                 <h3 className="font-heading text-museum-walnut text-base font-semibold tracking-wide uppercase">
-                  Muzeu Historik Skënderbeu
+                  Muzeu Kombëtar Gjergj Kastrioti Skënderbeu
                 </h3>
               </div>
               <div className="overflow-hidden border border-museum-walnut/15">
@@ -157,7 +166,7 @@ export default async function VisitPage({ params }: Props) {
                   style={{ border: 0, display: "block" }}
                   allowFullScreen
                   loading="lazy"
-                  title="Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu"
+                  title="Muzeu Kombëtar Gjergj Kastrioti Skënderbeu"
                 />
               </div>
               <a
@@ -175,7 +184,7 @@ export default async function VisitPage({ params }: Props) {
               <div className="flex items-center gap-2">
                 <span className="text-museum-terracotta text-lg">⌂</span>
                 <h3 className="font-heading text-museum-walnut text-base font-semibold tracking-wide uppercase">
-                  Muzeu Etnografik
+                  Muzeu Kombëtar Etnografik Krujë
                 </h3>
               </div>
               <div className="overflow-hidden border border-museum-walnut/15">
@@ -186,7 +195,7 @@ export default async function VisitPage({ params }: Props) {
                   style={{ border: 0, display: "block" }}
                   allowFullScreen
                   loading="lazy"
-                  title="Muzeu Etnografik Krujë"
+                  title="Muzeu Kombëtar Etnografik Krujë"
                 />
               </div>
               <a
@@ -229,7 +238,7 @@ export default async function VisitPage({ params }: Props) {
                 <span className="text-museum-gold text-2xl mt-0.5">⚔</span>
                 <div>
                   <h3 className="font-heading text-museum-linen-50 font-semibold tracking-wide uppercase text-sm leading-tight">
-                    Muzeu Historik Kombëtar<br />Gjergj Kastrioti Skënderbeu
+                    Muzeu Kombëtar Gjergj Kastrioti Skënderbeu
                   </h3>
                   <p className="font-caption text-museum-gold/50 italic text-xs mt-1">Krujë, Shqipëri</p>
                 </div>
@@ -269,7 +278,7 @@ export default async function VisitPage({ params }: Props) {
                 <span className="text-museum-terracotta text-2xl mt-0.5">⌂</span>
                 <div>
                   <h3 className="font-heading text-museum-linen-50 font-semibold tracking-wide uppercase text-sm leading-tight">
-                    Muzeu Etnografik<br />Krujë
+                    Muzeu Kombëtar Etnografik Krujë
                   </h3>
                   <p className="font-caption text-museum-gold/50 italic text-xs mt-1">Pazari i Vjetër, Krujë, Shqipëri</p>
                 </div>

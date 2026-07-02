@@ -6,13 +6,6 @@ import { useTranslations } from "next-intl";
 import SectionDivider from "@/components/museum/SectionDivider";
 import type { ReactNode } from "react";
 
-const teamMembers = [
-  { name: "Prof. Dr. Artan Hoxha", role: "Drejtor / Director" },
-  { name: "Msc. Elira Dervishi", role: "Kuratore / Curator" },
-  { name: "Dott. Blerina Kelmendi", role: "Arkeologe / Archaeologist" },
-  { name: "Msc. Armend Sokoli", role: "Specialist Konservimi / Conservation Specialist" },
-];
-
 const GRAIN_FINE_C =
   "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")";
 const GRAIN_COARSE_C =
@@ -35,7 +28,7 @@ function PlaqueScrew({ corner }: { corner: string }) {
 function Plaque({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div
-      className="relative overflow-hidden p-6"
+      className="relative overflow-hidden p-6 h-full"
       style={{
         background:
           "radial-gradient(ellipse at 10% 15%, rgba(252,246,234,0.80) 0%, transparent 36%), " +
@@ -114,43 +107,14 @@ export default function ContactPage() {
 
       {/* Stone wall with limestone plaques */}
       <section className="stone-texture bg-museum-stone-800 py-16 px-4 md:py-24">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 items-start">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 items-stretch">
 
-          {/* Left: about + team */}
-          <div className="flex flex-col gap-6">
-
-            <Plaque label={t("about_title")}>
-              <div className="font-body text-sm leading-relaxed space-y-3" style={{ color: "rgba(61,43,31,0.72)" }}>
-                <p>Muzeu Historik dhe Etnografik i Krujës është një nga institucionet kulturore më të rëndësishme të Shqipërisë. I themeluar në vitin 1981, muzeu ndodhet brenda kështjellës historike të Krujës.</p>
-                <p>Muzeu mban dy koleksione kryesore: Muzeu Historik dhe Muzeu Etnografik, i vendosur në një kullë tradicionale shqiptare të shekullit XVIII.</p>
-                <p>Me mbi 3 000 artefakte autentike, muzeu ofron një udhëtim unik nëpër shekujt e historisë, kulturës dhe traditave shqiptare.</p>
-              </div>
-            </Plaque>
-
-            <Plaque label={t("team_title")}>
-              <div className="flex flex-col">
-                {teamMembers.map((m) => (
-                  <div key={m.name} className="flex items-start gap-4 py-3 border-b last:border-0" style={{ borderColor: "rgba(184,135,58,0.20)" }}>
-                    <span style={{ color: "#b8873a", fontSize: "0.55rem", marginTop: "0.45rem", flexShrink: 0 }}>✦</span>
-                    <div>
-                      <p className="font-heading font-semibold tracking-[0.10em] uppercase" style={{ fontSize: "0.85rem", color: "#4a320e", textShadow: "0 1px 0 rgba(255,255,255,0.28)" }}>
-                        {m.name}
-                      </p>
-                      <p className="font-caption italic text-xs mt-0.5" style={{ color: "#b8873a", opacity: 0.80 }}>
-                        {m.role}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Plaque>
-
-            <Plaque label="Kontakti Direkt">
+          <Plaque label={t("contact_direct_title")}>
               <div className="flex flex-col gap-3">
                 {[
                   {
                     icon: "☎",
-                    label: "Telefon",
+                    label: t("phone_label"),
                     value: "0511 22225",
                     href: "tel:051122225",
                   },
@@ -182,18 +146,38 @@ export default function ContactPage() {
                     </div>
                   </a>
                 ))}
-                {/* Facebook — name only, URL not confirmed */}
-                <div className="flex items-start gap-3 py-2.5" >
+                <a
+                  href="https://www.facebook.com/MuzeuEtnografikKruje"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 py-2.5 border-b last:border-0 group"
+                  style={{ borderColor: "rgba(184,135,58,0.18)", textDecoration: "none" }}
+                >
                   <span style={{ color: "#b8873a", fontSize: "0.75rem", marginTop: "0.15rem", flexShrink: 0, opacity: 0.70 }}>◉</span>
                   <div>
-                    <p className="font-heading tracking-[0.12em] uppercase" style={{ fontSize: "0.68rem", color: "#b8873a", opacity: 0.65 }}>Facebook / Messenger</p>
-                    <p className="font-body text-xs leading-snug" style={{ color: "#3d2b1f" }}>Muzeu Historik dhe Etnografik, Krujë</p>
+                    <p className="font-heading tracking-[0.12em] uppercase" style={{ fontSize: "0.68rem", color: "#b8873a", opacity: 0.65 }}>Facebook</p>
+                    <p className="font-body text-xs leading-snug group-hover:underline" style={{ color: "#3d2b1f" }}>Qendra Muzeore Krujë</p>
                   </div>
+                </a>
+              </div>
+
+              {/* Lidhjet */}
+              <div className="mt-5 pt-4" style={{ borderTop: "1px solid rgba(184,135,58,0.18)" }}>
+                <p className="font-heading tracking-[0.18em] uppercase mb-3" style={{ fontSize: "0.68rem", color: "#b8873a", opacity: 0.65 }}>{t("links_title")}</p>
+                <div className="flex flex-col gap-2">
+                  {[
+                    { label: "youtu.be", href: "https://www.youtube.com", icon: "▷" },
+                    { label: "qendramuzeore-kruje.com", href: "https://qendramuzeore-kruje.com", icon: "◈" },
+                    { label: "google.com", href: "https://maps.google.com/maps?q=Muzeu+Historik+Kombetar+Gjergj+Kastrioti+Skenderbeg+Kruje+Albania", icon: "◎" },
+                  ].map(({ label, href, icon }) => (
+                    <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group" style={{ textDecoration: "none" }}>
+                      <span style={{ color: "#b8873a", fontSize: "0.7rem", opacity: 0.55 }}>{icon}</span>
+                      <span className="font-body text-xs group-hover:underline" style={{ color: "#3d2b1f" }}>{label}</span>
+                    </a>
+                  ))}
                 </div>
               </div>
             </Plaque>
-
-          </div>
 
           {/* Right: contact form */}
           <Plaque label={t("form_title")}>

@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("heading"),
     description: t("subtitle"),
-    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale + "/museums" },
+    alternates: { canonical: "https://qendramuzeore-kruje.com/" + locale + "/museums" },
   };
 }
 
@@ -29,12 +29,12 @@ export default async function MuseumsPage({ params }: Props) {
         {
           "@context": "https://schema.org",
           "@type": ["Museum", "TouristAttraction", "LocalBusiness"],
-          "name": "Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu",
-          "description": "Muzeu historik brenda kështjellës së Krujës, kushtuar heroit kombëtar Gjergj Kastrioti Skënderbeu.",
-          "url": "https://muzeukruje.vercel.app",
+          "name": "Muzeu Kombëtar Gjergj Kastrioti Skënderbeu",
+          "description": "Muzeu Kombëtar Gjergj Kastrioti Skënderbeu ndodhet brenda kështjellës historike të Krujës, kushtuar heroit kombëtar Gjergj Kastrioti Skënderbeu.",
+          "url": "https://qendramuzeore-kruje.com",
           "telephone": "+35551122225",
           "email": "muzeu.gjkskenderbeu@yahoo.com",
-          "image": "https://muzeukruje.vercel.app/images/castle-day.jpg",
+          "image": "https://qendramuzeore-kruje.com/images/castle-day.jpg",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Sheshi Gjergj Kastrioti, Kështjella e Krujës",
@@ -43,19 +43,20 @@ export default async function MuseumsPage({ params }: Props) {
           },
           "geo": { "@type": "GeoCoordinates", "latitude": 41.5097, "longitude": 19.7956 },
           "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" }
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "19:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "19:00" }
           ]
         },
         {
           "@context": "https://schema.org",
           "@type": ["Museum", "TouristAttraction", "LocalBusiness"],
-          "name": "Muzeu Etnografik Krujë",
-          "description": "Muzeu etnografik në kullën tradicionale shqiptare të shekullit XVIII, tregon jetën osmane të Krujës.",
-          "url": "https://muzeukruje.vercel.app",
+          "name": "Muzeu Kombëtar Etnografik Krujë",
+          "description": "Muzeu Kombëtar Etnografik Krujë ndodhet në kullën tradicionale shqiptare të shekullit XVIII dhe tregon jetën e Krujës nën periudhën osmane.",
+          "url": "https://qendramuzeore-kruje.com",
           "telephone": "+35551122225",
           "email": "muzeu.gjkskenderbeu@yahoo.com",
-          "image": "https://muzeukruje.vercel.app/images/ethnographic-interior.jpg",
+          "image": "https://qendramuzeore-kruje.com/images/ethnographic-interior.jpg",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Pazari i Vjetër, Krujë",
@@ -64,8 +65,9 @@ export default async function MuseumsPage({ params }: Props) {
           },
           "geo": { "@type": "GeoCoordinates", "latitude": 41.5073, "longitude": 19.7947 },
           "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" }
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "19:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "19:00" }
           ]
         }
       ]} />
@@ -144,12 +146,20 @@ export default async function MuseumsPage({ params }: Props) {
               <p className="font-body text-museum-walnut/70 text-sm leading-relaxed">
                 {t("skanderbeg_desc")}
               </p>
-              <Link
-                href={`/${locale}/collections?museum=skanderbeg`}
-                className="self-start mt-2 px-6 py-2.5 border border-museum-gold/50 text-museum-gold font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-gold/10 transition-colors"
-              >
-                {t("explore")} →
-              </Link>
+              <div className="flex flex-wrap gap-3 mt-2">
+                <Link
+                  href={`/${locale}/collections?museum=skanderbeg`}
+                  className="self-start px-6 py-2.5 border border-museum-gold/50 text-museum-gold font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-gold/10 transition-colors"
+                >
+                  {t("explore")} →
+                </Link>
+                <Link
+                  href={`/${locale}/guides`}
+                  className="self-start px-6 py-2.5 border border-museum-gold/30 text-museum-gold/70 font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-gold/10 transition-colors"
+                >
+                  {t("audio_guide")} →
+                </Link>
+              </div>
             </div>
 
             {/* Images — large hero + 2 thumbnails below */}
@@ -242,12 +252,20 @@ export default async function MuseumsPage({ params }: Props) {
               <p className="font-body text-museum-walnut/70 text-sm leading-relaxed">
                 {t("ethnographic_desc")}
               </p>
-              <Link
-                href={`/${locale}/collections?museum=ethnographic`}
-                className="self-start mt-2 px-6 py-2.5 border border-museum-terracotta/40 text-museum-terracotta font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-terracotta/10 transition-colors"
-              >
-                {t("explore")} →
-              </Link>
+              <div className="flex flex-wrap gap-3 mt-2">
+                <Link
+                  href={`/${locale}/collections?museum=ethnographic`}
+                  className="self-start px-6 py-2.5 border border-museum-terracotta/40 text-museum-terracotta font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-terracotta/10 transition-colors"
+                >
+                  {t("explore")} →
+                </Link>
+                <Link
+                  href={`/${locale}/etnografiku`}
+                  className="self-start px-6 py-2.5 border border-museum-gold/40 text-museum-gold font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-gold/10 transition-colors"
+                >
+                  {t("explore_rooms")} →
+                </Link>
+              </div>
             </div>
           </div>
 

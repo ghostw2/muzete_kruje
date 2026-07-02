@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://muzeukruje.vercel.app";
+const BASE = "https://qendramuzeore-kruje.com";
 const LOCALES = ["sq", "en", "fr", "de", "ru", "pl"] as const;
 const PAGES = [
   { path: "",             priority: 1.0, freq: "weekly"  },

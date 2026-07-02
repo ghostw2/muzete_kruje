@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -31,13 +30,14 @@ export default function HeroSection({ locale }: Props) {
           willChange: "transform",
         }}
       >
-        <Image
-          src="/media/castle-hero.jpg"
-          alt="Muzeu Historik Skënderbeu dhe Muzeu Etnografik — Kështjella e Krujës"
-          fill
-          className="object-cover object-[center_38%]"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          src="/media/intro.mp4"
+          className="absolute inset-0 w-full h-full object-cover object-[center_38%]"
           style={{ opacity: 0.45 }}
-          priority
         />
       </div>
 

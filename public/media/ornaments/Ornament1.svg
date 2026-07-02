@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1077.53 30.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0d1616;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_18" data-name="Layer 18">
+    <g>
+      <rect class="cls-1" x="56.3" y="13.12" width="963.13" height="2.4"/>
+      <g>
+        <ellipse class="cls-1" cx="38.63" cy="14.97" rx="15.57" ry="14.97"/>
+        <ellipse class="cls-1" cx="10.03" cy="14.97" rx="10.03" ry="9.65"/>
+      </g>
+      <g>
+        <ellipse class="cls-1" cx="1038.89" cy="15.16" rx="15.57" ry="14.97"/>
+        <ellipse class="cls-1" cx="1067.49" cy="15.16" rx="10.03" ry="9.65"/>
+      </g>
+    </g>
+  </g>
+</svg>

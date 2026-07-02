@@ -5,9 +5,12 @@
     "collections": "Kolekcje",
     "gallery": "Galeria",
     "news": "Aktualności i wydarzenia",
+    "pavilions": "Pawilony",
+    "guides": "Przewodniki",
     "visit": "Zwiedzanie",
     "contact": "Kontakt",
-    "museums": "Muzea"
+    "museums": "Muzea",
+    "njoftimet": "Ogłoszenia"
   },
   "hero": {
     "title": "Muzeum Historyczne i Etnograficzne",
@@ -78,7 +81,12 @@
     "map_open": "Otwórz w Google Maps →",
     "reviews_view": "Czytaj opinie",
     "reviews_write": "Napisz opinię",
-    "reviews_disclaimer": "Opinie pochodzą z Google Maps — niezależnej platformy dla odwiedzających."
+    "reviews_disclaimer": "Opinie pochodzą z Google Maps — niezależnej platformy dla odwiedzających.",
+    "tickets_online_title": "Kup Bilet Online",
+    "tickets_online_desc": "Oficjalny albański serwis państwowy — kup bilet przed wizytą.",
+    "tickets_online_btn": "Kup Bilet — e-Albania →",
+    "tickets_online_note": "Wymaga konta e-Albania (dowód osobisty)",
+    "hours_everyday": "Poniedziałek – Niedziela"
   },
   "contact": {
     "heading": "Skontaktuj się z nami",
@@ -88,7 +96,10 @@
     "name": "Imię i nazwisko",
     "email": "Email",
     "message": "Wiadomość",
-    "send": "Wyślij wiadomość"
+    "send": "Wyślij wiadomość",
+    "contact_direct_title": "Kontakt bezpośredni",
+    "phone_label": "Telefon",
+    "links_title": "Linki"
   },
   "common": {
     "back": "Wróć",
@@ -100,16 +111,57 @@
   "museums": {
     "heading": "Dwa Muzea — Jedno Dziedzictwo",
     "subtitle": "Dwie wyjątkowe instytucje w historycznych murach Krujë",
-    "skanderbeg_name": "Muzeum Gjergj Kastrioti Skanderbeg",
+    "skanderbeg_name": "Muzeum Narodowe Gjergja Kastriotiego Skanderbega",
     "skanderbeg_desc": "W murach historycznego zamku Krujë muzeum czci narodowego bohatera Albanii — Skanderbega. Oryginalna broń, dokumenty i artefakty z okresu 1443–1468 opowiadają o 25 latach heroicznego oporu przeciwko Imperium Osmańskiemu.",
     "skanderbeg_period": "XV wiek · Zamek Krujë",
-    "ethnographic_name": "Muzeum Etnograficzne",
+    "ethnographic_name": "Narodowe Muzeum Etnograficzne w Krui",
     "ethnographic_desc": "Mieści się w tradycyjnej albańskiej wieży kulla z XVIII wieku i przybliża codzienne życie osmańskiej Krujë. Stroje, naczynia, biżuteria i przedmioty domowe odkrywają albańską kulturę przez stulecia.",
     "ethnographic_period": "XVIII wiek · Tradycyjna Kulla",
-    "explore": "Odkryj kolekcję"
+    "explore": "Odkryj kolekcję",
+    "explore_rooms": "Odkryj pokój po pokoju",
+    "audio_guide": "Audioguide"
+  },
+  "pavilions": {
+    "heading": "Audioguide",
+    "subtitle": "Narrowane opisy każdego pawilonu muzeum",
+    "play": "Odtwórz audio",
+    "pause": "Pauza",
+    "show_transcript": "Czytaj transkrypt",
+    "hide_transcript": "Ukryj transkrypt",
+    "transcript_lang_note": "Transkrypt w języku angielskim",
+    "transcript_lang_note_al": "Transkrypt w języku albańskim",
+    "audio_label": "Posłuchaj tej sekcji",
+    "kruja": "Krujë — Wprowadzenie",
+    "muzeu": "Historyczne Muzeum Skanderbega",
+    "lashtesia": "Starożytność",
+    "mesjeta": "Średniowiecze",
+    "bashkimi": "Zjednoczenie",
+    "invazioni": "Osmańska inwazja",
+    "rezistenca": "Opór",
+    "pinakoteka": "Pinakoteka",
+    "etnografiku": "Muzeum Etnograficzne"
   },
   "about": {
     "heading": "O Muzeum",
     "subtitle": "Historia i misja naszej instytucji"
+  },
+  "etnografiku": {
+    "heading": "Muzeum Etnograficzne",
+    "subtitle": "Podróż pokój po pokoju przez albańską wieżę kulla z XVIII wieku"
+  },
+  "guides": {
+    "heading": "Przewodniki",
+    "subtitle": "Audioguide i wycieczka pokój po pokoju",
+    "audio_section": "Audioguide — Muzeum Historyczne Skanderbega",
+    "tour_section": "Muzeum Etnograficzne",
+    "tour_subtitle": "Podróż pokój po pokoju przez albańską wieżę kulla z XVIII wieku"
+  },
+  "njoftimet": {
+    "heading": "Ogłoszenia",
+    "subtitle": "Oficjalne komunikaty muzeum",
+    "read_more": "Czytaj więcej",
+    "back": "Powrót do ogłoszeń",
+    "no_items": "Brak ogłoszeń.",
+    "view_all": "Wszystkie ogłoszenia"
   }
 }

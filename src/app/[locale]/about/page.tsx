@@ -9,9 +9,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about" });
   return {
-    title: t("heading") + " — Muzeu Historik dhe Etnografik Krujë",
+    title: t("heading") + " — Qendra Muzeore Krujë",
     description: t("subtitle"),
-    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale + "/about" },
+    alternates: { canonical: "https://qendramuzeore-kruje.com/" + locale + "/about" },
   };
 }
 

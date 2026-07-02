@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("heading"),
     description: t("subtitle"),
-    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale + "/news" },
+    alternates: { canonical: "https://qendramuzeore-kruje.com/" + locale + "/news" },
   };
 }
 

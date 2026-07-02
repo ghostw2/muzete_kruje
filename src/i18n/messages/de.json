@@ -5,9 +5,12 @@
     "collections": "Sammlungen",
     "gallery": "Galerie",
     "news": "Neuigkeiten & Veranstaltungen",
+    "pavilions": "Pavillons",
+    "guides": "Führungen",
     "visit": "Besuch",
     "contact": "Kontakt",
-    "museums": "Museen"
+    "museums": "Museen",
+    "njoftimet": "Bekanntmachungen"
   },
   "hero": {
     "title": "Historisches und Ethnographisches Museum",
@@ -78,7 +81,12 @@
     "map_open": "In Google Maps öffnen →",
     "reviews_view": "Bewertungen ansehen",
     "reviews_write": "Bewertung schreiben",
-    "reviews_disclaimer": "Bewertungen stammen von Google Maps — einer unabhängigen Besucherplattform."
+    "reviews_disclaimer": "Bewertungen stammen von Google Maps — einer unabhängigen Besucherplattform.",
+    "tickets_online_title": "Tickets Online Kaufen",
+    "tickets_online_desc": "Offizieller albanischer Staatsdienst — kaufen Sie Ihr Ticket vor Ihrem Besuch.",
+    "tickets_online_btn": "Ticket Kaufen — e-Albania →",
+    "tickets_online_note": "Erfordert ein e-Albania-Konto (Personalausweis)",
+    "hours_everyday": "Montag – Sonntag"
   },
   "contact": {
     "heading": "Kontaktieren Sie uns",
@@ -88,7 +96,10 @@
     "name": "Name",
     "email": "E-Mail",
     "message": "Nachricht",
-    "send": "Nachricht senden"
+    "send": "Nachricht senden",
+    "contact_direct_title": "Direktkontakt",
+    "phone_label": "Telefon",
+    "links_title": "Links"
   },
   "common": {
     "back": "Zurück",
@@ -100,16 +111,57 @@
   "museums": {
     "heading": "Zwei Museen — Ein Erbe",
     "subtitle": "Zwei einzigartige Institutionen innerhalb der historischen Mauern von Krujë",
-    "skanderbeg_name": "Museum Gjergj Kastrioti Skanderbeg",
+    "skanderbeg_name": "Nationales Museum Gjergj Kastrioti Skanderbeg",
     "skanderbeg_desc": "Innerhalb der historischen Burg von Krujë ehrt das Museum den albanischen Nationalhelden — Skanderbeg. Originalwaffen, Dokumente und Artefakte aus 1443–1468 erzählen von 25 Jahren heroischen Widerstands gegen das Osmanische Reich.",
     "skanderbeg_period": "15. Jahrhundert · Burg Krujë",
-    "ethnographic_name": "Ethnographisches Museum",
+    "ethnographic_name": "Nationales Ethnographisches Museum Krujë",
     "ethnographic_desc": "Im traditionellen albanischen Kulla-Turm aus dem 18. Jahrhundert erweckt das Ethnographische Museum das Alltagsleben im osmanischen Krujë zum Leben. Trachten, Gefäße, Schmuck und Haushaltsgegenstände zeigen albanische Kultur über Jahrhunderte.",
     "ethnographic_period": "18. Jahrhundert · Traditionelle Kulla",
-    "explore": "Sammlung erkunden"
+    "explore": "Sammlung erkunden",
+    "explore_rooms": "Zimmer für Zimmer erkunden",
+    "audio_guide": "Audioguide"
+  },
+  "pavilions": {
+    "heading": "Audioguide",
+    "subtitle": "Kommentierte Beschreibungen jedes Museumspavillons",
+    "play": "Audio abspielen",
+    "pause": "Pause",
+    "show_transcript": "Transkript lesen",
+    "hide_transcript": "Transkript ausblenden",
+    "transcript_lang_note": "Transkript auf Englisch",
+    "transcript_lang_note_al": "Transkript auf Albanisch",
+    "audio_label": "Diesen Abschnitt anhören",
+    "kruja": "Krujë — Einführung",
+    "muzeu": "Historisches Museum Skanderbeg",
+    "lashtesia": "Antike",
+    "mesjeta": "Mittelalter",
+    "bashkimi": "Vereinigung",
+    "invazioni": "Osmanische Invasion",
+    "rezistenca": "Widerstand",
+    "pinakoteka": "Pinakothek",
+    "etnografiku": "Ethnographisches Museum"
   },
   "about": {
     "heading": "Über das Museum",
     "subtitle": "Geschichte und Mission unserer Institution"
+  },
+  "etnografiku": {
+    "heading": "Ethnographisches Museum",
+    "subtitle": "Zimmer für Zimmer durch ein albanisches Kulla-Turmhaus aus dem 18. Jahrhundert"
+  },
+  "guides": {
+    "heading": "Führungen",
+    "subtitle": "Audioguide und Zimmer-für-Zimmer-Rundgang",
+    "audio_section": "Audioguide — Historisches Museum Skanderbeg",
+    "tour_section": "Ethnographisches Museum",
+    "tour_subtitle": "Zimmer für Zimmer durch ein albanisches Kulla-Turmhaus aus dem 18. Jahrhundert"
+  },
+  "njoftimet": {
+    "heading": "Bekanntmachungen",
+    "subtitle": "Offizielle Mitteilungen des Museums",
+    "read_more": "Weiterlesen",
+    "back": "Zurück zu den Bekanntmachungen",
+    "no_items": "Derzeit keine Bekanntmachungen.",
+    "view_all": "Alle Bekanntmachungen anzeigen"
   }
 }

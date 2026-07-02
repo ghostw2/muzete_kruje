@@ -17,7 +17,7 @@ export default function Footer({ locale }: Props) {
             <div className="relative w-24 h-24">
               <Image
                 src="/media/museum-logo.png"
-                alt="Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu dhe Etnografik - Krujë"
+                alt="Qendra Muzeore Krujë"
                 fill
                 className="object-contain"
                 sizes="96px"
@@ -25,13 +25,13 @@ export default function Footer({ locale }: Props) {
             </div>
             <div>
               <p className="font-heading text-museum-gold text-sm tracking-widest uppercase leading-snug">
-                Muzeu Historik Kombëtar
-              </p>
-              <p className="font-heading text-museum-linen-100/50 text-xs tracking-wide uppercase mt-0.5">
-                Gjergj Kastrioti Skënderbeu
+                Qendra Muzeore Krujë
               </p>
               <p className="font-caption text-museum-linen-100/40 italic text-xs mt-1">
-                dhe Etnografik · Krujë
+                Muzeu Kombëtar Gjergj Kastrioti Skënderbeu
+              </p>
+              <p className="font-caption text-museum-linen-100/40 italic text-xs">
+                dhe Muzeu Kombëtar Etnografik Krujë
               </p>
             </div>
           </div>
@@ -44,10 +44,9 @@ export default function Footer({ locale }: Props) {
             <nav className="flex flex-col gap-2">
               {[
                 { href: `/${locale}/museums`, label: t("museums") },
-                { href: `/${locale}/timeline`, label: t("timeline") },
-                { href: `/${locale}/collections`, label: t("collections") },
+                { href: `/${locale}/guides`, label: t("guides") },
                 { href: `/${locale}/gallery`, label: t("gallery") },
-                { href: `/${locale}/news`, label: t("news") },
+                { href: `/${locale}/njoftimet`, label: t("njoftimet") },
                 { href: `/${locale}/visit`, label: t("visit") },
                 { href: `/${locale}/contact`, label: t("contact") },
               ].map((link) => (
@@ -82,7 +81,7 @@ export default function Footer({ locale }: Props) {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-museum-gold/10 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-museum-linen-100/30 text-xs font-body">
-            © {new Date().getFullYear()} Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu dhe Etnografik, Krujë
+            © {new Date().getFullYear()} Qendra Muzeore Krujë
           </p>
           <span className="text-museum-gold/60 text-xs">✦</span>
         </div>

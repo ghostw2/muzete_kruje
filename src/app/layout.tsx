@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Muzeu Historik dhe Etnografik, Krujë",
-  description: "Historical and Ethnographic Museum of Krujë, Albania",
+  title: "Qendra Muzeore Krujë",
+  description: "Qendra Muzeore Krujë — Muzeu Kombëtar Gjergj Kastrioti Skënderbeu dhe Muzeu Kombëtar Etnografik Krujë",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

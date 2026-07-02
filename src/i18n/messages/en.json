@@ -6,8 +6,11 @@
     "collections": "Collections",
     "gallery": "Gallery",
     "news": "News & Events",
+    "pavilions": "Pavilions",
+    "guides": "Guides",
     "visit": "Visit",
-    "contact": "Contact"
+    "contact": "Contact",
+    "njoftimet": "Announcements"
   },
   "hero": {
     "title": "Historical and Ethnographic Museum",
@@ -20,13 +23,15 @@
   "museums": {
     "heading": "Two Museums — One Heritage",
     "subtitle": "Two unique institutions within the historic walls of Krujë",
-    "skanderbeg_name": "Gjergj Kastrioti Skanderbeg Museum",
+    "skanderbeg_name": "Gjergj Kastrioti Skanderbeg National Museum",
     "skanderbeg_desc": "Within the historic castle of Krujë, the museum honours Albania's national hero — Gjergj Kastrioti Skanderbeg. Original weapons, documents and artifacts from the 1443–1468 period tell the story of 25 years of heroic resistance against the Ottoman Empire.",
     "skanderbeg_period": "15th Century · Castle of Krujë",
-    "ethnographic_name": "Ethnographic Museum",
+    "ethnographic_name": "Krujë National Ethnographic Museum",
     "ethnographic_desc": "Housed in a traditional 18th-century Albanian kulla (tower house), the ethnographic museum brings everyday life in Ottoman-era Krujë to life. Costumes, vessels, jewellery and household objects reveal Albanian culture and customs across the centuries.",
     "ethnographic_period": "18th Century · Traditional Kulla",
-    "explore": "Explore the Collection"
+    "explore": "Explore the Collection",
+    "explore_rooms": "Explore Room by Room",
+    "audio_guide": "Audio Guide"
   },
   "collections": {
     "heading": "Collections",
@@ -85,7 +90,12 @@
     "map_open": "Open in Google Maps →",
     "reviews_view": "Read reviews",
     "reviews_write": "Write a review",
-    "reviews_disclaimer": "Reviews are sourced from Google Maps — an independent visitor platform."
+    "reviews_disclaimer": "Reviews are sourced from Google Maps — an independent visitor platform.",
+    "tickets_online_title": "Buy Tickets Online",
+    "tickets_online_desc": "Official Albanian state service — purchase your ticket before your visit.",
+    "tickets_online_btn": "Buy Ticket — e-Albania →",
+    "tickets_online_note": "Requires an e-Albania account (national ID)",
+    "hours_everyday": "Monday – Sunday"
   },
   "contact": {
     "heading": "Contact Us",
@@ -95,7 +105,10 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "contact_direct_title": "Direct Contact",
+    "phone_label": "Phone",
+    "links_title": "Links"
   },
   "common": {
     "back": "Back",
@@ -104,6 +117,26 @@
     "dimensions": "Dimensions",
     "museum_label": "Museum"
   },
+  "pavilions": {
+    "heading": "Audio Guide",
+    "subtitle": "Narrated descriptions of each museum pavilion",
+    "play": "Play audio",
+    "pause": "Pause audio",
+    "show_transcript": "Read transcript",
+    "hide_transcript": "Hide transcript",
+    "transcript_lang_note": "Transcript in English",
+    "transcript_lang_note_al": "Transcript in Albanian",
+    "audio_label": "Listen to this section",
+    "kruja": "Krujë — Introduction",
+    "muzeu": "Skanderbeg Historical Museum",
+    "lashtesia": "Antiquity",
+    "mesjeta": "Middle Ages",
+    "bashkimi": "Unification",
+    "invazioni": "Ottoman Invasion",
+    "rezistenca": "Resistance",
+    "pinakoteka": "Pinacotheca",
+    "etnografiku": "Ethnographic Museum"
+  },
   "about": {
     "heading": "About the Museum",
     "subtitle": "The history and mission of our institution"
@@ -111,5 +144,24 @@
   "timeline": {
     "heading": "Timeline",
     "subtitle": "From the Illyrians to independence — the history of Krujë through the centuries"
+  },
+  "etnografiku": {
+    "heading": "Ethnographic Museum",
+    "subtitle": "A room-by-room journey through an 18th-century Albanian kulla"
+  },
+  "guides": {
+    "heading": "Guides",
+    "subtitle": "Audio guide and room-by-room tour",
+    "audio_section": "Audio Guide — Skanderbeg Historical Museum",
+    "tour_section": "Ethnographic Museum",
+    "tour_subtitle": "A room-by-room journey through an 18th-century Albanian kulla"
+  },
+  "njoftimet": {
+    "heading": "Announcements",
+    "subtitle": "Official notices from the museum",
+    "read_more": "Read more",
+    "back": "Back to announcements",
+    "no_items": "No announcements at this time.",
+    "view_all": "View all announcements"
   }
 }

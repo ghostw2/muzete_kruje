@@ -5,14 +5,16 @@ import Image from "next/image";
 import HeroSection from "@/components/museum/HeroSection";
 import SectionDivider from "@/components/museum/SectionDivider";
 import JsonLd from "@/components/museum/JsonLd";
+import { getAnnouncements } from "@/repositories/njoftimet";
+import AnnouncementCard from "@/components/museum/AnnouncementCard";
 
 type Props = { params: Promise<{ locale: string }> };
 
 const quickLinks = [
-  { key: "museums",     icon: "⚔",  href: "/museums" },
-  { key: "timeline",    icon: "📜",  href: "/timeline" },
-  { key: "collections", icon: "🏺",  href: "/collections" },
-  { key: "visit",       icon: "📍",  href: "/visit" },
+  { key: "museums", icon: "⚔", href: "/museums" },
+  { key: "guides",  icon: "🎧", href: "/guides" },
+  { key: "gallery", icon: "🖼", href: "/gallery" },
+  { key: "visit",   icon: "📍", href: "/visit" },
 ];
 
 
@@ -22,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("title") + " — Krujë, Shqipëri",
     description: t("tagline"),
-    alternates: { canonical: "https://muzeukruje.vercel.app/" + locale },
+    alternates: { canonical: "https://qendramuzeore-kruje.com/" + locale },
   };
 }
 
@@ -30,6 +32,8 @@ export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   const t  = await getTranslations({ locale, namespace: "nav" });
   const tm = await getTranslations({ locale, namespace: "museums" });
+  const tn = await getTranslations({ locale, namespace: "njoftimet" });
+  const announcements = getAnnouncements();
 
   return (
     <>
@@ -39,17 +43,17 @@ export default async function HomePage({ params }: Props) {
         "@graph": [
           {
             "@type": "Organization",
-            "name": "Muzeu Historik dhe Etnografik, Krujë",
-            "url": "https://muzeukruje.vercel.app",
-            "logo": "https://muzeukruje.vercel.app/images/museum-logo.png",
+            "name": "Qendra Muzeore Krujë",
+            "url": "https://qendramuzeore-kruje.com",
+            "logo": "https://qendramuzeore-kruje.com/images/museum-logo.png",
             "telephone": "+35551122225",
             "email": "muzeu.gjkskenderbeu@yahoo.com",
             "sameAs": ["https://www.instagram.com/muzeumetkruje/"]
           },
           {
             "@type": "WebSite",
-            "url": "https://muzeukruje.vercel.app",
-            "name": "Muzeu Historik dhe Etnografik, Krujë",
+            "url": "https://qendramuzeore-kruje.com",
+            "name": "Qendra Muzeore Krujë",
             "inLanguage": ["sq","en","fr","de","ru","pl"]
           }
         ]
@@ -176,6 +180,33 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       <SectionDivider />
+
+      {/* ── Njoftimet (Announcements) ────────────────────── */}
+      {announcements.length > 0 && (
+        <section className="stone-texture bg-museum-stone-950 py-16 px-4">
+          <div className="relative z-10 max-w-6xl mx-auto">
+            <div className="flex items-end justify-between mb-10 gap-4 flex-wrap">
+              <div>
+                <h2 className="font-heading text-museum-linen-50 text-2xl sm:text-3xl font-semibold tracking-widest uppercase">
+                  {tn("heading")}
+                </h2>
+                <p className="font-caption text-museum-gold/60 italic text-sm mt-1">{tn("subtitle")}</p>
+              </div>
+              <Link
+                href={`/${locale}/njoftimet`}
+                className="font-heading text-museum-gold/70 text-xs tracking-[0.15em] uppercase hover:text-museum-gold transition-colors shrink-0"
+              >
+                {tn("view_all")} →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {announcements.slice(0, 3).map((item) => (
+                <AnnouncementCard key={item.id} item={item} locale={locale} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── Quick navigation ─────────────────────────────── */}
       <section className="stone-texture bg-museum-stone-950 py-16 px-4">

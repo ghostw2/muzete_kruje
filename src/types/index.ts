@@ -38,6 +38,17 @@ export type NewsArticle = {
   hidden?: boolean;
 };
 
+export type Pavilion = {
+  id: string;
+  nameKey: string;
+  audioAL: string;
+  audioEN: string;
+  transcriptAL: string;
+  transcriptEN: string;
+  images: string[];
+  order: number;
+};
+
 export type GalleryImage = {
   id: string;
   src: string;
