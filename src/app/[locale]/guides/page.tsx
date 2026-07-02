@@ -72,7 +72,7 @@ export default async function GuidesPage({ params }: Props) {
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex items-center gap-6">
             <div className="flex-1 h-px bg-museum-gold/20" />
-            <h2 className="font-heading text-museum-walnut text-sm font-semibold tracking-[0.25em] uppercase px-6">
+            <h2 className="font-heading text-museum-walnut text-sm font-semibold tracking-[0.25em] uppercase px-6 mt-5">
               {tG("audio_section")}
             </h2>
             <div className="flex-1 h-px bg-museum-gold/20" />
