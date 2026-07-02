@@ -52,7 +52,8 @@
     "subtitle": "Images from the museums and their artifacts",
     "tab_architecture": "Architecture",
     "tab_artifacts": "Artifacts",
-    "tab_events": "Events"
+    "tab_events": "Events",
+    "tab_landscape": "Landscapes"
   },
   "news": {
     "heading": "News & Events",

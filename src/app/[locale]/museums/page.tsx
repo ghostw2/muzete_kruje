@@ -87,7 +87,7 @@ export default async function MuseumsPage({ params }: Props) {
       {/* ── Full-bleed panorama with editorial text overlay ── */}
       <div className="relative w-full h-[65vh] min-h-[420px] overflow-hidden">
         <Image
-          src="/images/skanderbeg-museum-night-aerial.jpg"
+          src="/media/skanderbeg-museum-night-aerial.jpg"
           alt="Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu — natën, Krujë"
           fill
           className="object-cover object-[center_78%]"
@@ -157,7 +157,7 @@ export default async function MuseumsPage({ params }: Props) {
               {/* Hero photo */}
               <div className="relative h-72 overflow-hidden">
                 <Image
-                  src="/images/castle-day.jpg"
+                  src="/media/castle-day.jpg"
                   alt="Kështjella e Krujës — hyrja kryesore"
                   fill
                   className="object-cover object-center"
@@ -168,7 +168,7 @@ export default async function MuseumsPage({ params }: Props) {
               <div className="grid grid-cols-2 gap-2 h-40">
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/images/skanderbeg-museum-night-glow.jpg"
+                    src="/media/skanderbeg-museum-night-glow.jpg"
                     alt="Muzeu Historik natën — i ndriçuar me ngjyrë portokalli"
                     fill
                     className="object-cover object-[center_40%]"
@@ -177,7 +177,7 @@ export default async function MuseumsPage({ params }: Props) {
                 </div>
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/images/museum-battle-panorama.jpg"
+                    src="/media/museum-battle-panorama.jpg"
                     alt="Panorama e betejës — ekspozitë brenda Muzeut Historik"
                     fill
                     className="object-cover object-[center_30%]"
@@ -202,7 +202,7 @@ export default async function MuseumsPage({ params }: Props) {
               {/* Hero: interior — object-top shows the painted murals and ceiling */}
               <div className="relative h-72 overflow-hidden">
                 <Image
-                  src="/images/ethnographic-interior.jpg"
+                  src="/media/ethnographic-interior.jpg"
                   alt="Brendësia e Muzeut Etnografik — dhoma me piktura osmane"
                   fill
                   className="object-cover object-top"
@@ -213,7 +213,7 @@ export default async function MuseumsPage({ params }: Props) {
               <div className="grid grid-cols-2 gap-2 h-40">
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/images/ethnographic-museum.jpg"
+                    src="/media/ethnographic-museum.jpg"
                     alt="Fasada e jashtme e Muzeut Etnografik"
                     fill
                     className="object-cover object-top"
@@ -222,7 +222,7 @@ export default async function MuseumsPage({ params }: Props) {
                 </div>
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/images/ethnographic-plaque.jpg"
+                    src="/media/ethnographic-plaque.jpg"
                     alt="Pllaka — Banese Qytetare Krutane, Shek. XVIII"
                     fill
                     className="object-cover object-[center_25%]"

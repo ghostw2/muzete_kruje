@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       images: [{
-        url: "/images/ethnographic-interior.jpg",
+        url: "/media/ethnographic-interior.jpg",
         width: 2560,
         height: 1707,
         alt: "Brendësia e Muzeut Etnografik Krujë — dhoma osmane e shekullit XVIII",
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      images: ["/images/ethnographic-interior.jpg"],
+      images: ["/media/ethnographic-interior.jpg"],
     },
     alternates: {
       canonical: url,

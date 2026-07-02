@@ -32,12 +32,11 @@ export default function HeroSection({ locale }: Props) {
         }}
       >
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Forteresse_de_Kruja.jpg/1920px-Forteresse_de_Kruja.jpg"
-          alt="Kështjella e Krujës"
+          src="/media/castle-hero.jpg"
+          alt="Muzeu Historik Skënderbeu dhe Muzeu Etnografik — Kështjella e Krujës"
           fill
-          unoptimized
-          className="object-cover object-[center_60%]"
-          style={{ opacity: 0.4 }}
+          className="object-cover object-[center_38%]"
+          style={{ opacity: 0.45 }}
           priority
         />
       </div>

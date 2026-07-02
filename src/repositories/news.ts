@@ -3,7 +3,7 @@ import { newsData } from "@/data/news";
 
 export function getNewsArticles(locale: Locale): NewsArticle[] {
   return newsData
-    .filter((a) => a.locale === locale)
+    .filter((a) => a.locale === locale && !a.hidden)
     .sort((a, b) => b.date.localeCompare(a.date));
 }
 

@@ -51,6 +51,21 @@ export default function GalleryGrid({ images }: Props) {
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
+              {img.author && (
+                <div className="absolute inset-x-0 bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-gradient-to-t from-black/75 to-transparent pt-6 pb-2 px-2">
+                  <p className="text-white text-[10px] leading-tight">
+                    © {img.author}{" · "}
+                    {img.licenseUrl ? (
+                      <a href={img.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2" onClick={(e) => e.stopPropagation()}>{img.license}</a>
+                    ) : (
+                      <span>{img.license}</span>
+                    )}
+                    {img.commonsUrl && (
+                      <>{" · "}<a href={img.commonsUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2" onClick={(e) => e.stopPropagation()}>Commons ↗</a></>
+                    )}
+                  </p>
+                </div>
+              )}
             </div>
             <div className="px-3 py-2 bg-museum-linen-100">
               <p className="font-caption text-museum-walnut/50 italic text-xs line-clamp-1 text-left">
@@ -88,9 +103,19 @@ export default function GalleryGrid({ images }: Props) {
                 <p className="font-caption text-museum-linen-100/60 italic text-sm">
                   {selected.alt}
                 </p>
-                <p className="font-body text-museum-linen-100/30 text-xs mt-1">
-                  © Wikimedia Commons · CC BY / CC BY-SA
-                </p>
+                {selected.author && (
+                  <p className="font-body text-museum-linen-100/30 text-xs mt-1">
+                    © {selected.author}{" · "}
+                    {selected.licenseUrl ? (
+                      <a href={selected.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline">{selected.license}</a>
+                    ) : (
+                      <span>{selected.license}</span>
+                    )}
+                    {selected.commonsUrl && (
+                      <>{" · "}<a href={selected.commonsUrl} target="_blank" rel="noopener noreferrer" className="underline">Commons ↗</a></>
+                    )}
+                  </p>
+                )}
               </div>
 
               {/* Prev / Next */}

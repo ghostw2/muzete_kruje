@@ -16,7 +16,7 @@ export default function Footer({ locale }: Props) {
           <div className="flex flex-col gap-4">
             <div className="relative w-24 h-24">
               <Image
-                src="/images/museum-logo.png"
+                src="/media/museum-logo.png"
                 alt="Muzeu Historik Kombëtar Gjergj Kastrioti Skënderbeu dhe Etnografik - Krujë"
                 fill
                 className="object-contain"

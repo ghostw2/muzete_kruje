@@ -74,7 +74,7 @@ export default async function HomePage({ params }: Props) {
               {/* Featured image */}
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/images/castle-night.jpg"
+                  src="/media/castle-night.jpg"
                   alt="Kështjella e Krujës natën"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -85,7 +85,7 @@ export default async function HomePage({ params }: Props) {
               <div className="grid grid-cols-2 h-24 border-t border-museum-gold/10">
                 <div className="relative overflow-hidden border-r border-museum-gold/10">
                   <Image
-                    src="/images/castle-day.jpg"
+                    src="/media/castle-day.jpg"
                     alt="Hyrja e kështjellës"
                     fill
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700 delay-75"
@@ -94,7 +94,7 @@ export default async function HomePage({ params }: Props) {
                 </div>
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/images/museums-night.jpg"
+                    src="/media/museums-night.jpg"
                     alt="Të dy muzeumet natën"
                     fill
                     className="object-cover object-[center_60%] group-hover:scale-105 transition-transform duration-700 delay-150"
@@ -125,7 +125,7 @@ export default async function HomePage({ params }: Props) {
               {/* Featured image — interior painted room, show from top to capture murals */}
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/images/ethnographic-interior.jpg"
+                  src="/media/ethnographic-interior.jpg"
                   alt="Brendësia e Muzeut Etnografik — dhoma me piktura"
                   fill
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
@@ -136,7 +136,7 @@ export default async function HomePage({ params }: Props) {
               <div className="grid grid-cols-2 h-24 border-t border-museum-terracotta/10">
                 <div className="relative overflow-hidden border-r border-museum-terracotta/10">
                   <Image
-                    src="/images/ethnographic-museum.jpg"
+                    src="/media/ethnographic-museum.jpg"
                     alt="Fasada e Muzeut Etnografik"
                     fill
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-700 delay-75"
@@ -145,7 +145,7 @@ export default async function HomePage({ params }: Props) {
                 </div>
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/images/ethnographic-plaque.jpg"
+                    src="/media/ethnographic-plaque.jpg"
                     alt="Pllaka — Banese Qytetare Krutane"
                     fill
                     className="object-cover object-[center_30%] group-hover:scale-105 transition-transform duration-700 delay-150"

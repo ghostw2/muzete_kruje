@@ -35,14 +35,19 @@ export type NewsArticle = {
   excerpt: string;
   body: string;
   imageUrl?: string;
+  hidden?: boolean;
 };
 
 export type GalleryImage = {
   id: string;
   src: string;
   alt: string;
-  category: "architecture" | "artifacts" | "events";
+  category: "architecture" | "artifacts" | "events" | "landscape";
   museum?: Museum;
   width: number;
   height: number;
+  author?: string;
+  license?: string;
+  licenseUrl?: string;
+  commonsUrl?: string;
 };

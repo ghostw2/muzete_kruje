@@ -25,6 +25,7 @@ export default function GalleryPage() {
     { value: "all", label: "All" },
     { value: "architecture", label: t("tab_architecture") },
     { value: "artifacts", label: t("tab_artifacts") },
+    { value: "landscape", label: t("tab_landscape") },
     { value: "events", label: t("tab_events") },
   ];
 
