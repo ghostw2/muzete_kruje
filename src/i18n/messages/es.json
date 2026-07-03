@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "museums": "Museos",
+    "timeline": "Cronología",
+    "collections": "Colecciones",
+    "gallery": "Galería",
+    "news": "Noticias y Eventos",
+    "pavilions": "Pabellones",
+    "guides": "Guías",
+    "visit": "Visita",
+    "contact": "Contacto",
+    "njoftimet": "Anuncios"
+  },
+  "hero": {
+    "title": "Museo Histórico y Etnográfico",
+    "subtitle": "Krujë · Albania",
+    "tagline": "Dos museos - cien años de historia. El Museo de Skanderbeg y el Museo Etnográfico.",
+    "cta_explore": "Explorar los Museos",
+    "cta_visit": "Planificar la Visita",
+    "scroll": "Descubrir más"
+  },
+  "museums": {
+    "heading": "Dos Museos — Un Patrimonio",
+    "subtitle": "Dos instituciones únicas dentro de los muros históricos de Krujë",
+    "skanderbeg_name": "Museo Nacional Gjergj Kastrioti Skanderbeg",
+    "skanderbeg_desc": "Dentro del castillo histórico de Krujë, el museo honra al héroe nacional albanés — Gjergj Kastrioti Skanderbeg. Armas, documentos y artefactos originales del período 1443–1468 narran 25 años de resistencia heroica contra el Imperio Otomano.",
+    "skanderbeg_period": "Siglo XV · Castillo de Krujë",
+    "ethnographic_name": "Museo Nacional Etnográfico de Krujë",
+    "ethnographic_desc": "Ubicado en una kulla (casa torre) albanesa tradicional del siglo XVIII, el museo etnográfico da vida a la vida cotidiana en la Krujë otomana. Trajes, vasijas, joyas y objetos domésticos revelan la cultura y costumbres albanesas a lo largo de los siglos.",
+    "ethnographic_period": "Siglo XVIII · Kulla Tradicional",
+    "explore": "Explorar la Colección",
+    "explore_guide": "Explorar la Guía",
+    "explore_rooms": "Explorar Sala por Sala",
+    "audio_guide": "Audioguía"
+  },
+  "collections": {
+    "heading": "Colecciones",
+    "subtitle": "Artefactos y patrimonio cultural",
+    "filter_museum": "Museo",
+    "filter_all": "Todos",
+    "filter_skanderbeg": "Museo Skanderbeg",
+    "filter_ethnographic": "Museo Etnográfico",
+    "filter_era": "Época",
+    "filter_type": "Tipo",
+    "era_ancient": "Antiguo",
+    "era_medieval": "Medieval",
+    "era_ottoman": "Otomano",
+    "era_modern": "Moderno",
+    "type_weaponry": "Armamento",
+    "type_textiles": "Textiles",
+    "type_documents": "Documentos",
+    "type_household": "Doméstico",
+    "view_details": "Ver detalles"
+  },
+  "gallery": {
+    "heading": "Galería",
+    "subtitle": "Imágenes de los museos y sus artefactos",
+    "tab_architecture": "Arquitectura",
+    "tab_artifacts": "Artefactos",
+    "tab_events": "Eventos",
+    "tab_landscape": "Paisajes"
+  },
+  "news": {
+    "heading": "Noticias y Eventos",
+    "subtitle": "Últimas exposiciones y actividades",
+    "read_more": "Leer más"
+  },
+  "visit": {
+    "heading": "Planificar la Visita",
+    "hours_title": "Horario de Apertura",
+    "hours_weekdays": "Lunes – Viernes",
+    "hours_saturday": "Sábado",
+    "hours_sunday": "Domingo",
+    "hours_closed": "Cerrado",
+    "tickets_title": "Precios de Entradas",
+    "ticket_adult": "Adultos",
+    "ticket_child": "Niños (menores de 12)",
+    "ticket_student": "Estudiantes",
+    "ticket_free": "Gratis",
+    "location_title": "Ubicación",
+    "directions_title": "Cómo Llegar",
+    "accessibility_title": "Accesibilidad",
+    "accessibility_text": "El Museo Histórico está ubicado dentro del castillo y tiene escaleras. El Museo Etnográfico tiene acceso limitado para sillas de ruedas. Para necesidades específicas de accesibilidad, contáctenos con antelación.",
+    "directions_tirana": "30 minutos desde Tirana en coche por la carretera Tirana–Krujë",
+    "directions_bus": "Autobuses desde la terminal de Tirana (Sheshi Shqiponja) cada hora — 60 Lekë",
+    "directions_taxi": "Taxi desde la ciudad baja de Krujë hasta el castillo — aproximadamente 5 minutos",
+    "contact_label": "Contacto",
+    "google_title": "Encuéntranos en Google",
+    "google_subtitle": "Lee las reseñas de los visitantes y comparte tu experiencia",
+    "map_open": "Abrir en Google Maps →",
+    "reviews_view": "Leer reseñas",
+    "reviews_write": "Escribir una reseña",
+    "reviews_disclaimer": "Las reseñas provienen de Google Maps — una plataforma independiente de visitantes.",
+    "tickets_online_title": "Comprar Entradas en Línea",
+    "tickets_online_desc": "Servicio oficial del estado albanés — compra tu entrada antes de la visita.",
+    "tickets_online_btn": "Comprar Entrada — e-Albania →",
+    "tickets_online_note": "Requiere cuenta e-Albania (DNI nacional)",
+    "hours_everyday": "Lunes – Domingo"
+  },
+  "contact": {
+    "heading": "Contáctenos",
+    "about_title": "Sobre la Institución",
+    "team_title": "Nuestro Equipo",
+    "form_title": "Enviar un Mensaje",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "contact_direct_title": "Contacto Directo",
+    "phone_label": "Teléfono",
+    "links_title": "Enlaces"
+  },
+  "common": {
+    "back": "Volver",
+    "period": "Período",
+    "provenance": "Procedencia",
+    "dimensions": "Dimensiones",
+    "museum_label": "Museo"
+  },
+  "pavilions": {
+    "heading": "Audioguía",
+    "subtitle": "Descripciones narradas de cada pabellón del museo",
+    "play": "Reproducir audio",
+    "pause": "Pausar audio",
+    "show_transcript": "Leer transcripción",
+    "hide_transcript": "Ocultar transcripción",
+    "transcript_lang_note": "Transcripción en inglés",
+    "transcript_lang_note_al": "Transcripción en albanés",
+    "audio_label": "Escuchar esta sección",
+    "kruja": "Krujë — Introducción",
+    "muzeu": "Museo Histórico Skanderbeg",
+    "lashtesia": "Antigüedad",
+    "mesjeta": "Edad Media",
+    "bashkimi": "Unificación",
+    "invazioni": "Invasión Otomana",
+    "rezistenca": "Resistencia",
+    "pinakoteka": "Pinacoteca",
+    "etnografiku": "Museo Etnográfico"
+  },
+  "about": {
+    "heading": "Sobre el Museo",
+    "subtitle": "La historia y misión de nuestra institución"
+  },
+  "timeline": {
+    "heading": "Cronología",
+    "subtitle": "De los ilirios a la independencia — la historia de Krujë a través de los siglos"
+  },
+  "etnografiku": {
+    "heading": "Museo Etnográfico",
+    "subtitle": "Un recorrido sala por sala por una kulla albanesa del siglo XVIII"
+  },
+  "guides": {
+    "heading": "Guías",
+    "subtitle": "Audioguía y recorrido sala por sala",
+    "audio_section": "Audioguía — Museo Histórico Skanderbeg",
+    "tour_section": "Museo Etnográfico",
+    "tour_subtitle": "Un recorrido sala por sala por una kulla albanesa del siglo XVIII"
+  },
+  "njoftimet": {
+    "heading": "Anuncios",
+    "subtitle": "Avisos oficiales del museo",
+    "read_more": "Leer más",
+    "back": "Volver a los anuncios",
+    "no_items": "No hay anuncios en este momento.",
+    "view_all": "Ver todos los anuncios"
+  }
+}

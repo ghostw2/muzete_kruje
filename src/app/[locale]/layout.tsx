@@ -14,7 +14,7 @@ type Props = {
 };
 
 const BASE = "https://qendramuzeore-kruje.com";
-const LOCALES = ["sq", "en", "fr", "de", "ru", "pl"] as const;
+const LOCALES = ["sq", "en", "fr", "de", "pl", "es", "it"] as const;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;

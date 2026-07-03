@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { njoftimet } from "@/data/njoftimet";
 import { getAnnouncementBySlug } from "@/repositories/njoftimet";
-
-const locales = ["sq", "en", "fr", "de", "ru", "pl"];
+import { locales } from "@/i18n/config";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 

@@ -54,7 +54,7 @@ export default async function HomePage({ params }: Props) {
             "@type": "WebSite",
             "url": "https://qendramuzeore-kruje.com",
             "name": "Qendra Muzeore Krujë",
-            "inLanguage": ["sq","en","fr","de","ru","pl"]
+            "inLanguage": ["sq","en","fr","de","pl","es","it"]
           }
         ]
       }} />

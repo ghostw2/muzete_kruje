@@ -148,10 +148,10 @@ export default async function MuseumsPage({ params }: Props) {
               </p>
               <div className="flex flex-wrap gap-3 mt-2">
                 <Link
-                  href={`/${locale}/collections?museum=skanderbeg`}
+                  href={`/${locale}/guides`}
                   className="self-start px-6 py-2.5 border border-museum-gold/50 text-museum-gold font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-gold/10 transition-colors"
                 >
-                  {t("explore")} →
+                  {t("explore_guide")} →
                 </Link>
                 <Link
                   href={`/${locale}/guides`}
@@ -254,10 +254,10 @@ export default async function MuseumsPage({ params }: Props) {
               </p>
               <div className="flex flex-wrap gap-3 mt-2">
                 <Link
-                  href={`/${locale}/collections?museum=ethnographic`}
+                  href={`/${locale}/guides`}
                   className="self-start px-6 py-2.5 border border-museum-terracotta/40 text-museum-terracotta font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-terracotta/10 transition-colors"
                 >
-                  {t("explore")} →
+                  {t("explore_guide")} →
                 </Link>
                 <Link
                   href={`/${locale}/etnografiku`}

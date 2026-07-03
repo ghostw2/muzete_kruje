@@ -10,7 +10,7 @@ type Props = { params: Promise<{ locale: string; slug: string }> };
 
 export default async function NewsDetailPage({ params }: Props) {
   const { locale, slug } = await params;
-  const fallback: Locale = ["sq", "en", "fr", "de", "ru", "pl"].includes(locale)
+  const fallback: Locale = ["sq", "en", "fr", "de", "pl", "es", "it"].includes(locale)
     ? (locale as Locale)
     : "en";
   const article = getNewsArticleBySlug(slug, fallback) ?? getNewsArticleBySlug(slug, "en");

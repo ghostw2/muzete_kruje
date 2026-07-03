@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function NewsPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "news" });
-  const fallback: Locale = ["sq", "en", "fr", "de", "ru", "pl"].includes(locale)
+  const fallback: Locale = ["sq", "en", "fr", "de", "pl", "es", "it"].includes(locale)
     ? (locale as Locale)
     : "en";
   const articles = getNewsArticles(fallback).length > 0
