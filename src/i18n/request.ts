@@ -5,10 +5,11 @@ import sq from "./messages/sq.json";
 import en from "./messages/en.json";
 import fr from "./messages/fr.json";
 import de from "./messages/de.json";
-import ru from "./messages/ru.json";
 import pl from "./messages/pl.json";
+import es from "./messages/es.json";
+import it from "./messages/it.json";
 
-const messages = { sq, en, fr, de, ru, pl } as const;
+const messages = { sq, en, fr, de, pl, es, it } as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
