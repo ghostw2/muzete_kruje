@@ -116,10 +116,10 @@ export default async function HomePage({ params }: Props) {
                   {tm("skanderbeg_desc")}
                 </p>
                 <Link
-                  href={`/${locale}/collections?museum=skanderbeg`}
+                  href={`/${locale}/guides`}
                   className="self-start mt-1 px-5 py-2 border border-museum-gold/40 text-museum-gold font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-gold/10 transition-colors"
                 >
-                  {tm("explore")} →
+                  {tm("explore_guide")} →
                 </Link>
               </div>
             </div>
@@ -167,10 +167,10 @@ export default async function HomePage({ params }: Props) {
                   {tm("ethnographic_desc")}
                 </p>
                 <Link
-                  href={`/${locale}/collections?museum=ethnographic`}
+                  href={`/${locale}/guides`}
                   className="self-start mt-1 px-5 py-2 border border-museum-terracotta/40 text-museum-terracotta font-heading text-xs tracking-[0.15em] uppercase hover:bg-museum-terracotta/10 transition-colors"
                 >
-                  {tm("explore")} →
+                  {tm("explore_guide")} →
                 </Link>
               </div>
             </div>
